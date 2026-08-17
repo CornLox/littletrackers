@@ -1,0 +1,144 @@
+@import "./style.css";
+
+.masonry-img{
+    max-width:100%!important;
+    max-height: auto!important;
+    display: block;
+    cursor: pointer;
+    transition: all  1s ease;
+}
+
+.masonry-img-col{
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.masonry-img:hover{
+    transform: scale(1.04);
+}
+
+
+/* ---- Year timeline rail -------------------------------------------------- */
+/* The wrapper is the positioning context for the rail, and its left padding
+   does double duty: it reserves space for the rail AND restores the side
+   space the row lost when `px-5` was removed (Bootstrap's .container gives
+   almost none on phones). The right padding balances it on small screens. */
+.masonry-timeline-wrap{
+    position: relative;
+    padding-left: 4.25rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 768px){
+    .masonry-timeline-wrap{
+        padding-left: 5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.masonry-timeline{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.25rem;
+    pointer-events: none;      /* clicks pass through to the grid */
+    z-index: 3;
+}
+
+@media (min-width: 768px){
+    .masonry-timeline{ width: 5rem; }
+}
+
+.masonry-timeline-line{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1.15rem;
+    width: 0.125rem;
+    background-color: var(--gold);
+    opacity: 0.55;
+}
+
+.masonry-timeline-mark{
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.masonry-timeline-dot{
+    flex: 0 0 auto;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-left: 0.83rem;      /* centres the dot on the line at 1.15rem */
+    border-radius: 50%;
+    background-color: var(--gold);
+    box-shadow: 0 0 0 0.2rem var(--white);   /* clean break over the line */
+}
+
+.masonry-timeline-year{
+    margin-left: 0.45rem;
+    font-family: var(--sans-serif, "Ubuntu");
+    font-weight: var(--semibold, 600);
+    font-size: 0.8rem;
+    color: var(--gold);
+}
+
+
+/* ---- Genre filter tabs --------------------------------------------------- */
+.masonry-genres{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.75rem;
+    padding: 0 1rem;
+}
+
+.masonry-genre-btn{
+    padding: 0.35rem 1.1rem;
+    border-radius: 2rem;
+    border: 0.125rem solid var(--gold);
+    background-color: var(--white);   /* inactive: white */
+    color: var(--gold);
+    font-family: var(--sans-serif, "Ubuntu");
+    font-weight: var(--semibold, 600);
+    font-size: 0.9rem;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.masonry-genre-btn:hover{
+    background-color: var(--old-paper, #f2eecd);
+}
+
+.masonry-genre-btn.active{
+    background-color: var(--gold);    /* active: golden */
+    color: var(--white);
+}
+
+/* Hidden by the genre filter: invisible but keeps its grid slot, so the
+   masonry keeps its layout and simply shows a hole. */
+.masonry-img-col{
+    transition: opacity 0.3s ease;
+}
+
+/* Genre filter — hidden item.
+   Below sm: collapse it entirely (display:none) so the space disappears and
+   the section shrinks — avoids a long scroll on small phones. */
+.masonry-img-col.masonry-hidden{
+    display: none;
+}
+
+/* sm and up: keep the slot as an invisible hole (unchanged behaviour). */
+@media (min-width: 576px){
+    .masonry-img-col.masonry-hidden{
+        display: inline-block;
+        visibility: hidden;
+        opacity: 0;
+    }
+}

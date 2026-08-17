@@ -1,0 +1,60 @@
+@import "./style.css";
+
+#about-section{
+    margin-top: var(--section-space);
+    
+}
+
+#about-section-hr > hr{
+    color: var(--green);
+}
+
+.img-row{
+    padding-top: var(--large-space);
+    padding-bottom: var(--large-space);
+}
+
+.img-col{
+    position: absolute;
+    opacity: 0.25;
+}
+
+.txt-col{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#theater-col{
+    left: -4rem;
+    margin-top: -4rem!important;
+}
+
+#plaggona-col{
+    right:-4rem;
+    margin-bottom: -4rem!important;
+}
+
+.img-col{   
+    
+    width: 83.3333%;
+    
+}
+
+@media (min-width: 576px) {
+    .img-col{  
+    width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .img-col{   
+        position: static;
+        width: 50%;
+        opacity: 1;
+    }
+ }
+
+
+
+
+

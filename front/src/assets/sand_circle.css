@@ -1,0 +1,27 @@
+@import "./style.css";
+
+.sand-circle {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden; /* clips the (slightly larger) canvas to a circle */
+  background-size: cover;
+  background-position: center;
+  cursor: default;
+  user-select: none;
+  outline: none;
+}
+
+.sand-circle.drainable {
+  cursor: pointer;
+}
+
+.sand-circle.drainable:focus-visible {
+  box-shadow: 0 0 0 0.2rem var(--gold);
+}
+
+.sand-canvas {
+  position: absolute;
+  display: block;
+}

@@ -1,0 +1,42 @@
+@import "./style.css";
+
+#meters-section{
+    padding-top: var(--section-space);
+    padding-bottom: var(--section-space);
+    background-color: var(--blue);
+    color: var(--white);            /* Title inherits this: white on blue */
+}
+
+#meters-section .meter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--mid-space) 0;
+}
+
+#meters-section .meter-number{
+    font-family: var(--sans-serif);
+    font-weight: var(--extra-heavy);
+    font-size: 3.25rem;
+    line-height: 1.1;
+    color: var(--gold);
+}
+
+#meters-section .meter-label{
+    margin-top: var(--small-space);
+    font-family: var(--sans-serif);
+    font-weight: var(--medium);
+    font-size: 1.2rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+/* --md (768) is unitless in style.css, so it can't feed a media query;
+   the pixel value here is the one place a raw number is unavoidable. */
+@media (min-width: 768px){
+    #meters-section .meter-number{
+        font-size: 4.5rem;
+    }
+}

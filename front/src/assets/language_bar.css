@@ -1,0 +1,65 @@
+@import "./style.css";
+
+  
+  #language-bar {
+    z-index: 3;
+    /* width: 2.813rem; */
+    height: 2.5rem;
+    margin: 1.875rem .5rem 1.25rem 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0%;
+    top: -2rem;    
+  }
+
+  @media (min-width: 578px) {
+    #language-bar {
+      margin: 1.875rem 1.25rem 1.25rem 0;
+      top:0
+    }
+  }
+
+  #language-bar > div {
+    position: relative;
+  }
+
+  .language-tab{
+    color: var(--white);
+    font-size: x-large;
+    font-weight: var(--medium);
+    font-family: 'Mansalva';
+  }
+
+  .language-tab.active{
+    color: var(--gold);
+    border-color: var(--white)!important;
+  }
+
+
+#greek-tab{
+    padding-bottom: calc(var(--small-space) / 2);
+    border-bottom: 0.0625rem solid ;
+  }
+
+  #english-tab{
+    padding-top: calc(var(--small-space) / 2);
+    border-top: 0.0625rem solid ;
+  }
+
+  @media (min-width: 578px) {
+  #greek-tab{
+    padding-right: var(--small-space);
+    border-right: 0.0625rem solid ;
+    padding-bottom: 0!important;
+    border-bottom: none!important;
+  }
+
+  #english-tab{
+    padding-left: var(--small-space);
+    border-left: 0.0625rem solid ;
+    padding-top: 0!important;
+    border-top: none!important;
+  }
+}
+  
+  

@@ -1,0 +1,36 @@
+@import "./style.css";
+
+#logo{
+    height: 5rem;
+    z-index: 2;
+    display: block;
+    color: var(--white);
+    border-bottom: 0.125rem solid var(--gold);
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* Removed `margin-right: 1.25rem`. With left:0 + w-100 (width:100%) the
+       width is fixed, so a right margin can't inset it — it was added past
+       the right edge, overflowing the page by 20px. */
+}
+
+
+#logo>#logo-title,#logo-subtitle{
+    font-family: 'Mansalva';
+}
+
+
+
+#logo>img{
+    width:20rem;
+    height: auto;
+}
+
+#logo > img{
+    filter: grayscale(1.0);
+}
+
+#menu:has(.change) ~  #logo > img{
+    filter: grayscale(0.0);
+}

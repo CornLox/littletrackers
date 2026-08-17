@@ -1,0 +1,19 @@
+@import "./style.css";
+
+#love{
+    color: var(--red);
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin-top: -0.125rem!important;
+}
+
+.copyright-text{
+    font-weight: lighter;
+    font-size: 0.8rem;
+
+}
+
+.copyright-text > a {
+    color: var(--white);
+}
+

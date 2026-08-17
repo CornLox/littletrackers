@@ -1,0 +1,11 @@
+@import "./style.css";
+
+.fixed-banner{
+    margin-top: var(--section-space);
+    background-attachment: fixed;
+    height: 25rem;
+    max-height: 1335px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

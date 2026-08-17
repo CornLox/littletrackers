@@ -1,0 +1,42 @@
+@import "./style.css";
+
+#how-section{
+    padding-top: calc(var(--section-space) / 2);
+    background-color: var(--pale);
+    padding-bottom: calc(var(--section-space) / 2);
+    
+    
+}
+ #how-section-hr > hr{
+    color: var(--purple);
+}
+
+.card{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.card-img-top{
+    transition: all  1s ease;
+    display: block;
+    cursor: pointer;
+}
+
+.card-img-top:hover{
+    transform: scale(1.04); 
+}
+
+.card>.card-img-top{
+    transition: all  1s ease;
+}
+
+.card.bright>.card-img-top{
+    filter: brightness(2) contrast(1.5);
+}
+
+
+
+
+ 
+
+

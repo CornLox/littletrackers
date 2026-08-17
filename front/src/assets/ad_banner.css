@@ -1,0 +1,31 @@
+@import "./style.css";
+
+
+/* Anchor for the absolutely-placed heading below. */
+.ad-txt{
+    position: relative;
+}
+
+.ad-txt > h1{
+    /* Was `position: relative`, which left the h1's original line reserved at
+       the top of .ad-txt (an empty white band above the image). `absolute`
+       takes it out of flow so that band collapses; `top: 13rem` with the
+       default (static) left keeps the letters exactly where they were. */
+    position: absolute;
+    top: 13rem;
+    z-index: 1;
+    color: var(--white);
+    font-family: "Mansalva"!important;
+    font-size: 2.5rem;
+}
+
+
+.ad-banner{
+    height: 26rem;
+    max-height: 1335px;
+    background-position: 4% 98%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(0.6) contrast(0.8) saturate(5) hue-rotate(-145deg) sepia(0.3);
+    transform: scaleX(-1);
+}

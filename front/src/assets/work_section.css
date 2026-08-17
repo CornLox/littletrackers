@@ -1,0 +1,25 @@
+@import "./style.css";
+
+#work-section{
+    padding-top: var(--section-space);
+    padding-bottom: calc(var(--section-space) / 2);
+    background-color: var(--pale);
+    
+}
+ #work-section-hr > hr{
+    color: var(--green);
+}
+
+.modal-dialog{
+    margin:none!important;
+    max-width: 100%!important;
+}
+
+.modal-img{
+    max-width: 10rem;
+    max-height: auto;
+    
+}
+
+
+

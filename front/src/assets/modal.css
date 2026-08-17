@@ -1,0 +1,256 @@
+@import "./style.css";
+
+/* ============================================================
+   Base modal — PROGRAMMES (work page). Unchanged dark circle.
+   ============================================================ */
+.modal-body{
+    background-color: transparent;
+    color: var(--white);
+    border:none;
+}
+
+.modal-header{
+    color: var(--gold);
+    border:none;
+    outline: none;
+}
+
+.modal-footer{
+    border:none;
+}
+
+.modal-content{
+    background-color: var(--blue);
+    border-radius: 50%;
+    padding: 16%;
+    opacity: 0.9;
+}
+
+@media (min-width: 992px){
+    .modal-content{ 
+    padding: 10%;  
+}
+}
+
+
+
+.modal-close-btn{
+    border:none;
+    outline: none;
+    background-color:  var(--blue);
+    color:  var(--white);
+    font-size: 3rem;
+    rotate: 45deg;
+    background-color: rgba(0,0,0,0);
+}
+
+
+
+/* ============================================================
+   TEAM ("who" page) modal — clean, centered, band-style card.
+   Everything scoped to .team-modal so the programmes modal above
+   is untouched.
+   ============================================================ */
+
+.team-modal .modal-content{
+    background-color: var(--white);
+    color: var(--blue);
+    border: none;
+    border-radius: 0.5rem;
+    opacity: 1;
+    padding: 1.5rem;
+}
+
+.team-modal .modal-header{
+    color: var(--blue);
+    border: none;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.team-modal .modal-heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.team-modal .modal-title{
+    font-family: "Mansalva"!important;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.team-modal .modal-subtitle{
+    font-family: "Mansalva"!important;
+    font-size: 1.4rem;
+    color: var(--blue);
+    margin: 0.2rem 0 0;
+}
+
+/* clean Bootstrap close button (reset the rotated "+" base style) */
+.team-modal .modal-close-btn.btn-close{
+    /* Recolour the × to the brand blue: Bootstrap bakes the colour into the
+       SVG background, so we drop that image, fill the button with blue, and
+       mask it back into the close-icon shape. */
+    background-color: var(--blue);
+    background-image: none;
+    width: 1em;
+    height: 1em;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E") center / 1em auto no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E") center / 1em auto no-repeat;
+    font-size: 1rem;
+    rotate: none;
+    opacity: 1;
+    border: none!important;
+    outline: 0!important;
+    box-shadow: none!important;
+}
+
+.team-modal .modal-body{
+    color: var(--blue);
+}
+
+/* photo(s): centered, capped to the viewport */
+.team-modal .modal-images{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    margin-bottom: 1.25rem;
+}
+@media (min-width: 768px){
+    .team-modal .modal-images{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+.team-modal .modal-figure{ margin: 0; }
+.team-modal .modal-cover{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 55vh;
+    object-fit: contain;
+    display: block;
+    border-radius: 0.25rem;
+}
+
+/* bio text */
+.team-modal .modal-extra{
+    margin: 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* optional link (kept for parity with the band modal) */
+.team-modal .modal-store{ margin: 1rem 0 0; }
+.team-modal .modal-store-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--blue);
+}
+.team-modal .modal-store-link:hover{ text-decoration: underline; }
+
+/* Programmes (workshops page) modal. Shares the base .modal-content look;
+   for now the only override is squaring off the corners. */
+.programme-modal .modal-content{
+    border-radius: 0;
+    padding: 5%;
+}
+/* Promo image + programme title now live in the body (header holds the
+   static work.tracking text instead). */
+.programme-modal .modal-header{
+    align-items: center;
+}
+
+
+/* Base (below md): image stacked and centered, everything below it.
+   `flow-root` makes the body contain the float used at md+ so the modal
+   height stays correct. */
+.programme-modal .modal-body{
+    text-align: center;
+    display: flow-root;
+}
+.programme-modal .modal-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1rem;
+}
+.programme-modal .modal-body-title{
+    color: var(--gold);
+    margin: 0 0 0.75rem;
+    font-weight: var(--bold);
+}
+.programme-modal .modal-body-text{
+    color: var(--white);
+    text-align: justify;
+}
+
+.programme-modal .modal-body-subtitle{
+    color: var(--gold);
+    margin: 0 0 0.75rem;
+    font-weight: var(--normal);
+}
+
+
+/* md and up: float the picture left so the title and text wrap around it. */
+@media (min-width: 768px){
+    .programme-modal .modal-body{
+        text-align: left;
+    }
+    .programme-modal .modal-img{
+        float: left;
+        width: 33%;                     /* ~ the col-md-4 you had */
+        max-width: 33%;
+        margin: 0 1.25rem 0.75rem 0;    /* gap on the right and below for wrap */
+    }
+}
+@media (min-width: 992px){
+    .programme-modal .modal-img{
+        width: 25%;                     /* ~ the col-lg-3 you had */
+        max-width: 25%;
+    }
+}
+/* ============================================================
+   Circular (legacy) modal — keep it close to a circle on large
+   screens instead of stretching into an over-elongated ellipse.
+   Scoped away from the team and programme modals, which override
+   the 50% radius and aren't circular.
+   ============================================================ */
+@media (min-width: 992px){
+    .modal:not(.team-modal):not(.programme-modal) .modal-dialog{
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .modal:not(.team-modal):not(.programme-modal) .modal-content{
+        min-height: 30rem;   /* matches the width cap: short content fills out
+                                to a circle; taller content grows downward.
+                                (aspect-ratio collapsed the flex box to a line) */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* HowSection (legacy) modal — the picture is an lg-and-up enhancement.
+   Hidden below lg; at lg+ it floats left at 1/3 width and the text wraps
+   around it, matching the programme modal. Scoped away from team/programme. */
+.modal:not(.team-modal):not(.programme-modal) .modal-img{
+    display: none;
+}
+
+@media (min-width: 992px){
+    .modal:not(.team-modal):not(.programme-modal) .modal-body{
+        display: flow-root;   /* contain the float so the modal height is right */
+        text-align: left;
+    }
+    .modal:not(.team-modal):not(.programme-modal) .modal-img{
+        display: block;
+        float: left;
+        width: 33%;
+        max-width: 33%;
+        height: auto;
+        margin: 0 1.25rem 0.75rem 0;
+    }
+}

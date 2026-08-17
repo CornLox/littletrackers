@@ -1,0 +1,73 @@
+
+:root {
+    --font-size-base: 16;
+    --sm: 576;
+    --md: 768;
+    --lg: 992;
+    --xl: 1200;
+    --xxl: 1400;
+    --black: #000000;
+    --grey: #7f7f7f;
+    --white: #ffffff;
+    --pale: #f8f8f8;
+    --red: #880808;
+    --gold: #D3A96C;
+    --blue: #007BA7;
+    
+    --old-paper: #f2eecd;
+    --extra-light: 100;
+    --light: 200;
+    --book: 300;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --heavy: 800;
+    --extra-heavy: 900;
+    --section-space: 5rem;
+    --large-space: 2.5rem;
+    --mid-space: 1.125rem;
+    --small-space: 0.5625rem;
+    --sans-serif: "Ubuntu";
+    --sans: "Open Sans";
+    scroll-behavior: smooth;
+    overflow-x: hidden!important;
+  }
+ 
+  
+  /* ---------Content------------- */
+  
+  /* ---------------------------------------- */
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column!important;
+      background-color: var(--white);
+  }
+  
+  
+  /* .container {
+    max-width: 1320px;
+  } */
+  
+  a {
+    text-decoration: none!important;
+    outline: none!important;
+  }
+
+  p {
+    line-height: 1.7;
+    font-family: var(--sans-serif);
+    font-weight: var(--book);
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+  
+    font-family: var(--sans);
+  }
+
+
+  

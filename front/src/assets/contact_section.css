@@ -1,0 +1,66 @@
+@import "./style.css";
+
+#contact-section{
+
+    margin-top: calc(var(--section-space) / 2) ;
+
+}
+
+.contact-underline{
+    border-bottom: 0.125rem solid;
+    width: 4rem;
+}
+
+.contact-title{
+    font-family: "Mansalva";
+}
+
+#contact-underline-1{
+    color: var(--purple);
+}
+
+#contact-underline-2{
+    color: var(--blue);
+}
+
+#contact-underline-3{
+    color: var(--green);
+}
+
+.contact-logo-link{
+    display: contents;
+}
+
+.contact-logo-img{
+    max-width: 4.25rem!important;
+}
+
+#email-txt{
+    color: var(--blue);
+}
+
+#festival-logo-link{
+    
+    display: contents;
+}
+
+#festival-logo{
+    margin-top: 0rem;
+    margin-left: 2rem;
+    max-width: 16rem!important;
+}
+
+#ziria-logo{
+    margin-top: 0rem;
+    margin-left: 2rem;
+    max-width: 6rem!important;
+    filter: invert(1);
+}
+
+
+
+
+
+
+
+   

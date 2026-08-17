@@ -1,0 +1,74 @@
+@import "./style.css";
+ 
+
+#top-banner{
+    transition: all  1s ease;
+}
+
+#top-caption{
+    position: absolute;
+    top: 40%;
+    left: 1rem;
+    width: 100%;
+    text-align: left!important;
+}
+
+#top-caption{
+    transition: all  1s ease;
+}
+
+@media only screen and (min-width:768px){
+    #top-caption{
+        left: 5.313rem;
+    }
+}
+
+#top-caption>h1{
+    font-family: 'Mansalva';
+    color: var(--white);
+}
+
+.top-inner >.top-item>.img-wrapper{
+    transition: all 0s ease;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.change >.top-item>.img-wrapper{
+    filter: brightness(0.5);
+}
+
+
+
+
+
+
+/* --- FIX: give the banner a real height so the background renders --- */
+/* .img-wrapper uses height:100%, which needs its ancestors to have a height. */
+#top-banner,
+#top-banner .top-inner,
+#top-banner .top-item,
+#top-banner .img-wrapper {
+    height: 100vh;
+    max-height: 100vh;
+}
+
+/* Mobile-safe viewport height (prevents the "short" look on iOS/Android) */
+@supports (height: 100dvh) {
+    #top-banner,
+    #top-banner .top-inner,
+    #top-banner .top-item,
+    #top-banner .img-wrapper {
+        height: 100dvh;
+    }
+}
+
+/* --- FIX: anchor the absolutely-positioned caption to the banner item --- */
+/* Without this, #top-caption (position:absolute; top:40%) positions against */
+/* the whole page instead of the banner, so the header appears misplaced.   */
+#top-banner .top-item {
+    position: relative;
+    overflow: hidden;
+}

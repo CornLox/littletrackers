@@ -1,0 +1,93 @@
+{
+  "logo":{
+    "title": "Little Trackers",
+    "subtitle": "Creative Team"
+  },
+  "nav": {
+    "home": "Αρχική",
+    "about": "Who we are",
+    "do": "What we do",
+    "how": "How we do it",
+    "workshops": "Workshops",
+    "press": "What they said about us",
+    "contact": "Contact"
+  },
+  "banner": {
+    "about": "Who we are",
+    "workshops": "Workshops",
+    "press": "What they wrote about us"
+  },
+  "carousel": {
+    "empathy": "Theatre is empathy",
+    "imagination": "Theatre is imagination",
+    "creativity": "Theatre is creativity",
+    "challenge": "Theatre is challenge"
+  },
+  "about": {
+    "title": "Who we are",
+    "p1": "We are a group of artists and educators, born in 2016 just beside the ancient theatre of Epidaurus, inspired by its Festival held every summer. Our team designs and runs theatre-education programmes for pre-school and school-age children, aiming at an experiential exploration of ancient drama at the very time their parents are watching the performances.",
+    "p2": "The programmes we design relate to the text and the direction of the performance being staged each time. In this way, parents as spectators and children as participants can, by the end of the performance, speak the same language and share in the same atmosphere and the same vision of the director."
+  },
+  "team": {
+    "title": "Our team"
+  },
+  "work": {
+    "title": "Our work",
+    "tracking": "Tracking the Performance...",
+    "by": "Directed by"
+  },
+  "meters": {
+    "title": "By the numbers",
+    "workshops": "Workshops",
+    "performances": "Performances",
+    "children": "Children"
+  },
+  "do": {
+    "title": "Discover what we do",
+    "intro": "We design a «journey» through which children are gradually initiated, through individual activities, into the magical universe of each play. ",
+    "theater": "Theatre",
+    "frag1": ", ",
+    "music": "music",
+    "frag2": " and the ",
+    "arts": "visual arts",
+    "frag3": " connect invisibly to one another and unravel the thread of the plot of the ",
+    "drama": "ancient drama",
+    "outro": " in a fun and interactive way. The children reflect on the questions the text raises and are called upon to make decisions about how the story unfolds."
+  },
+  "how": {
+    "title": "How we do it",
+    "items": {
+      "collectiveSpace": {
+        "title": "Collective shaping of the space",
+        "text": "The visual-arts part is always the beginning of the programme, as it introduces the children to the story through the making of set objects that carry symbolic value, conveying meanings about the action to follow."
+      },
+      "teacherInRole": {
+        "title": "Teacher in role",
+        "text": "The facilitator chooses the role suited to each moment, using a representative feature of that role (an object, a characteristic gesture, and so on). This technique sparks the students' interest, fosters their emotional engagement and creates the conditions for social interaction among the members of the group."
+      },
+      "collectiveRole": {
+        "title": "Collective role",
+        "text": "The children collectively play the role of a single character. Each child is free to speak whenever they feel they can add something to the role, without any need for agreement between their views. At a later stage of the technique, the children can jointly arrive at a collective portrayal of a role that they all agree on to some degree, which also strengthens cooperation."
+      },
+      "hotSeating": {
+        "title": "Hot seating",
+        "text": "A child, or a facilitator in role, is questioned by the rest of the group in order to bring to light the character's motives, actions, perceptions, values and so on. This technique is best used at a crucial moment of the drama and makes it easier to reach a decisive choice, as it helps the children study human behaviour in depth."
+      },
+      "mantleExpert": {
+        "title": "Mantle of the expert",
+        "text": "Without realising it, the children «know» what they don't believe they know. As experts, they are asked to investigate the data they are given, to solve riddles and to piece together clues, so that the world of the myth unfolds before them — along with the central question on which they are each time asked to take a position."
+      },
+      "conscienceAlley": {
+        "title": "Conscience alley",
+        "text": "The group splits in two and forms two facing rows, creating an alley. A facilitator or a child playing a particular role walks down the alley, while the other children voice the character's thoughts or offer advice about a decision they need to make. The character walking the alley, having heard the «voices of their conscience», then acts accordingly."
+      }
+    }
+  },
+  "ad": {
+    "findUs": "Find us at the Athens Epidaurus Festival"
+  },
+  "contact": {
+    "partners": "Our partners:",
+    "friends": "Our friends:"
+  }
+}

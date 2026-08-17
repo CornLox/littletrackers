@@ -1,0 +1,296 @@
+@import "./style.css";
+
+#do-section{
+    padding-top: var(--section-space);
+    color: var(--white);
+    background-color: var(--blue);
+    padding-bottom: calc(var(--section-space) / 2);
+    /* The decorative dashed arcs below are width:150% (plus ::before layers)
+       and spill past the right edge, widening the whole page on narrow
+       screens. Clip the overflow here — only the off-screen part is removed. */
+    overflow-x: hidden;
+}
+ #do-section-hr > hr{
+    color: var(--gold);
+    z-index: 4;
+}
+
+.do-section-img{
+    border-radius: 50%;
+    filter: invert(0.49) sepia(1) blur(2px) contrast(3.5);
+    cursor: pointer;
+}
+
+#theater:not(.show):hover{
+   transition: 1s all;
+   filter: invert(0.485) sepia(1) blur(1px) contrast(3.5) hue-rotate(-90deg);
+}
+
+#music:not(.show):hover{
+   transition: 1s all;
+   filter: invert(0.485) sepia(1) blur(1px) contrast(3.5) hue-rotate(180deg);
+}
+
+#painting:not(.show):hover{
+   transition: 1s all;
+   filter: invert(0.485) sepia(1) blur(1px) contrast(3.5) hue-rotate(90deg);
+}
+
+#myth:not(.show):hover{
+   transition: 1s all;
+   filter: invert(0.485) sepia(1) blur(1px) contrast(3.5) hue-rotate(-180deg);
+}
+
+div :has( img.show) > .q-span{
+   transition: 1s all;
+   color: transparent;
+}
+
+div:has(.q-span:hover) > #theater:not(.show){
+   transition: 1s all;
+   filter: invert(0.485) sepia(1) blur(1px) contrast(3.5) hue-rotate(-90deg);
+}
+
+div:has(.q-span:hover) > #music:not(.show){
+   transition: 1s all;
+   filter: invert(0.485) sepia(1) blur(1px) contrast(3.5) hue-rotate(180deg);
+}
+
+div:has(.q-span:hover) > #painting:not(.show){
+   transition: 1s all;
+   filter: invert(0.485) sepia(1) blur(1px) contrast(3.5) hue-rotate(90deg);
+}
+
+.do-section-img.show{
+   transition: 1s all;
+   filter: none;
+}
+
+#theater-span.show{
+   transition: 1s all;
+   font-weight: bold;
+   filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(-90deg);
+}
+
+#music-span.show{
+   transition: 1s all;
+   font-weight: bold;
+   filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(180deg);
+}
+
+#painting-span.show{
+   transition: 1s all;
+   font-weight: bold;
+   filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(90deg);
+}
+
+#myth-span.show{
+   transition: 1s all;
+   font-weight: bold;
+   filter: invert(0.485) sepia(1)  contrast(3.5);
+}
+
+@media (max-width: 991px) {
+   #theater-span{
+      font-weight: bold;
+      filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(-90deg);
+   }
+   
+   #music-span{
+      font-weight: bold;
+      filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(180deg);
+   }
+   
+   #painting-span{
+      font-weight: bold;
+      filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(90deg);
+   }
+
+   #myth-span{
+      font-weight: bold;
+      filter: invert(0.485) sepia(1)  contrast(3.5);
+   }
+}
+
+.do-section-img-hr{
+    width: 100%;
+    border-bottom: 0.125rem var(--gold) dashed;
+}
+
+ #do-section-img-hr-top-left {
+    width: 150%;
+    position: relative;
+    top: 98px;
+    height:200px;
+    border-style:dashed;
+    border-color:var(--gold);
+    border-width:0.25rem 0 0 0;
+    border-radius:200px 0px 0px 0px;
+    border-top: 0.25rem dashed var(--gold);
+
+ }
+
+#do-section-img-hr-top-left:before {
+    display:block;
+    height:200px;
+    margin-top:-204px;
+    border-style:dashed;
+    border-color:var(--gold);
+    border-width:0 0 0.25rem 0;
+    border-radius:0px 0px 0px 0px;
+    border-bottom:0.25rem dashed var(--gold);
+ }
+
+ #do-section-img-hr-top-right {
+    width: 150%;
+    position: relative;
+    top: 98px;
+    height:200px;
+    border-style:dashed;
+    border-color:var(--gold);
+    border-width:0.25rem 0 0 0;
+    border-radius:0px 200px 0px 0px;
+    border-top: 0.25rem dashed var(--gold);
+
+ }
+
+#do-section-img-hr-top-right:before {
+    display:block;
+    height:200px;
+    margin-top:-204px;
+    border-style:dashed;
+    border-color:var(--gold);
+    border-width:0 0 0.25rem 0;
+    border-radius:0px 0px 0px 0px;
+    border-bottom:0.25rem dashed var(--gold);
+ }
+
+ #do-section-img-hr-bottom-right {
+    width: 150%;
+    position: relative;
+    top: -98px;
+    height:200px;
+    border-style:dashed;
+    border-color:var(--gold);
+    border-width:0.25rem 0 0 0;
+    border-radius:200px 0px 0px 0px;
+    border-top: 0.25rem dashed var(--gold);
+    transform: rotate(180deg);
+
+ }
+
+#do-section-img-hr-bottom-right:before {
+    display:block;
+    height:200px;
+    margin-top:-204px;
+    border-style:dashed;
+    border-color:var(--gold);
+    border-width:0 0 0.25rem 0;
+    border-radius:0px 0px 0px 0px;
+    border-bottom:0.25rem dashed var(--gold);
+    transform: rotate(180deg);
+ }
+
+ #do-section-img-hr-bottom-left {
+    width: 150%;
+    position: relative;
+    top: -98px;
+    height:200px;
+    border-style:dashed;
+    border-color:var(--gold);
+    border-width:0.25rem 0 0 0;
+    border-radius:0px 200px 0px 0px;
+    border-top: 0.25rem dashed var(--gold);
+    transform: rotate(180deg);
+
+ }
+
+#do-section-img-hr-bottom-left:before {
+    display:block;
+    height:200px;
+    margin-top:-204px;
+    border-style:dashed;
+    border-color:var(--gold);
+    border-width:0 0 0.25rem 0;
+    border-radius:0px 0px 0px 0px;
+    border-bottom:0.25rem dashed var(--gold);
+    transform: rotate(180deg);
+ }
+
+ .do-arrow-icon-left{
+    font-size: 4rem;
+    color: var(--gold);
+    position: relative;
+    left: 0rem;
+    transform: rotate(180deg) rotateY(180deg);
+ }
+
+ .do-arrow-icon-right{
+   font-size: 4rem;
+   color: var(--gold);
+   position: relative;
+   left: 0rem;
+   transform: rotate(180deg) ;
+}
+
+@media (min-width: 1400px) {
+   .do-arrow-icon-left{
+      left: -1rem;
+   }
+   .do-arrow-icon-right{
+      left: 3rem;
+   }
+}
+
+.do-arrow-icon-bottom-left{
+   font-size: 4rem;
+   color: var(--gold);
+   position: relative;
+   transform: rotate(90deg) rotateY(180deg);
+   bottom: 1rem;
+}
+
+.do-arrow-icon-bottom-right{
+   font-size: 4rem;
+   color: var(--gold);
+   position: relative;
+   transform: rotate(90deg);
+   left: -1rem;
+ }
+
+@media (min-width: 992px) {
+   .do-arrow-icon-bottom-right{
+      transform: rotate(270deg);
+      left: 2rem!important;    
+   }
+   .do-arrow-icon-bottom-left{
+      left: 2rem;
+      bottom: 0rem!important;    
+   }
+   .do-section-img-hr{
+      position: relative;
+      left: 2rem;
+   }
+   #do-section-img-hr-top-left{
+      left: 2rem;
+   }
+   #do-section-img-hr-top-right{
+      left: 2rem;
+   }
+ }
+
+ .collapse{
+   background-color: #fff;
+ }
+ 
+ .q-span{
+   position: relative;
+   top: 25%;
+   left: 60%;
+   color: var(--blue);
+   z-index: 10;
+   font-size: 5rem;
+   cursor: pointer;
+   border-radius: 50%;
+
+ }
