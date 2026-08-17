@@ -12,6 +12,8 @@
 .img-row{
     padding-top: var(--large-space);
     padding-bottom: var(--large-space);
+    position: relative; 
+    overflow: hidden; 
 }
 
 .img-col{
