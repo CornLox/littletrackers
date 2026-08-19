@@ -34,8 +34,14 @@
 
 @media (min-width: 768px){
 
-.modal-body{
+.modal-title{
+        font-size: 1.75rem;
+    }
+    .modal-body{
     font-size: 1.25rem;
+    }
+    .modal-header{
+        font-size: 1.5rem;
     }
 }
 
