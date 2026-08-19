@@ -16,12 +16,12 @@ function AboutSection() {
             <div className="col-6 img-col" id="theater-col">
               <img className="img-fluid" src={theater} alt="" />
             </div>
-            <div className="col-md-6 z-1 z-md-0 align-self-center txt-col">
+            <div className="col-lg-6 z-1 z-lg-0 align-self-center txt-col">
               <p>{t("about.p1")}</p>
             </div>
           </div>
           <div className="row img-row">
-            <div className="col-md-6 z-1 z-md-0 align-self-center txt-col">
+            <div className="col-lg-6 z-1 z-lg-0 align-self-center txt-col">
               <p>{t("about.p2")}</p>
             </div>
             <div className="col-6 img-col align-self-end" id="plaggona-col">

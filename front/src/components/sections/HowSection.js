@@ -37,16 +37,17 @@ function HowSection() {
               const title = t(`how.items.${card.key}.title`);
               const text = t(`how.items.${card.key}.text`);
               return (
-                <div key={card.id} className="col-lg-4 mt-4">
+                <div key={card.id} className="col-md-6 col-lg-4 mt-4">
                   <div
                     onClick={(e) => makeBright(e.currentTarget)}
                     className="card rounded-0"
+                     data-bs-toggle="modal"
+                      data-bs-target={"#" + card.id + "-modal"}
                   >
                     <img
                       className="card-img-top img-fluid rounded-0"
                       src={card.img}
-                      data-bs-toggle="modal"
-                      data-bs-target={"#" + card.id + "-modal"}
+                     
                       alt={title}
                     />
                     <div className="card-body">

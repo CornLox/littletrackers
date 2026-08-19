@@ -5,16 +5,70 @@
     color: var(--white);
     background-color: var(--blue);
     padding-bottom: calc(var(--section-space) / 2);
-    /* The decorative dashed arcs below are width:150% (plus ::before layers)
-       and spill past the right edge, widening the whole page on narrow
-       screens. Clip the overflow here — only the off-screen part is removed. */
+    /* The trail is drawn as ONE continuous dashed loop (see .do-loop) that is
+       positioned in JS to thread through the circle centres, so nothing can
+       spill past the right edge any more. overflow-x stays as a cheap guard. */
     overflow-x: hidden;
 }
- #do-section-hr > hr{
+
+#do-section-hr > hr{
     color: var(--gold);
     z-index: 4;
 }
 
+/* ----------------------------------------------------------------------------
+   THE TRACK  (footprint trail connecting the circles)
+   .do-stage is the positioning context; .do-track is an absolute overlay that
+   fills it; .do-loop is a single rounded-rectangle dashed border whose top and
+   bottom edges are placed exactly on the circle centres; .do-foot are little
+   toddler footprints laid around the loop, pointing in the walking direction.
+   Everything here is desktop-only, matching the original (circles are hidden
+   below lg), so the mobile layout is untouched.
+---------------------------------------------------------------------------- */
+.do-stage{ position: relative; }
+
+.do-track{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;                 /* behind the circles */
+}
+
+.do-loop{
+    position: absolute;
+    border: 0.2rem dashed var(--gold);
+    border-radius: 100px;       /* corner radius of the racetrack (match CORNER in DoSection.js) */
+    opacity: 0.55;              /* the guide line stays faint... */
+}
+
+.do-foot{
+    position: absolute;
+    transform-origin: 50% 50%;
+}
+/* both tracks are the same sand-cream; target .do-foot-left / .do-foot-right
+   individually if you ever want them tinted differently */
+.do-foot > *{
+    fill: #e9cfa1;              /* the prints are solid sand-cream */
+}
+
+.row-do{
+    position: relative;
+    z-index: 2;                 /* circles + text sit above the trail */
+}
+
+/* keep the paragraph comfortably within the enclosing track (desktop only) */
+@media (min-width: 992px){
+    .do-stage [data-trailpoint="para"]{
+        max-width: 62%;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 991.98px){
+    .do-track{ display: none; } /* no decorative trail on mobile */
+}
+
+/* ---------------- interactive circles (unchanged) ------------------------ */
 .do-section-img{
     border-radius: 50%;
     filter: invert(0.49) sepia(1) blur(2px) contrast(3.5);
@@ -95,12 +149,12 @@ div:has(.q-span:hover) > #painting:not(.show){
       font-weight: bold;
       filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(-90deg);
    }
-   
+
    #music-span{
       font-weight: bold;
       filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(180deg);
    }
-   
+
    #painting-span{
       font-weight: bold;
       filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(90deg);
@@ -112,178 +166,11 @@ div:has(.q-span:hover) > #painting:not(.show){
    }
 }
 
-.do-section-img-hr{
-    width: 100%;
-    border-bottom: 0.125rem var(--gold) dashed;
-}
-
- #do-section-img-hr-top-left {
-    width: 150%;
-    position: relative;
-    top: 98px;
-    height:200px;
-    border-style:dashed;
-    border-color:var(--gold);
-    border-width:0.25rem 0 0 0;
-    border-radius:200px 0px 0px 0px;
-    border-top: 0.25rem dashed var(--gold);
-
- }
-
-#do-section-img-hr-top-left:before {
-    display:block;
-    height:200px;
-    margin-top:-204px;
-    border-style:dashed;
-    border-color:var(--gold);
-    border-width:0 0 0.25rem 0;
-    border-radius:0px 0px 0px 0px;
-    border-bottom:0.25rem dashed var(--gold);
- }
-
- #do-section-img-hr-top-right {
-    width: 150%;
-    position: relative;
-    top: 98px;
-    height:200px;
-    border-style:dashed;
-    border-color:var(--gold);
-    border-width:0.25rem 0 0 0;
-    border-radius:0px 200px 0px 0px;
-    border-top: 0.25rem dashed var(--gold);
-
- }
-
-#do-section-img-hr-top-right:before {
-    display:block;
-    height:200px;
-    margin-top:-204px;
-    border-style:dashed;
-    border-color:var(--gold);
-    border-width:0 0 0.25rem 0;
-    border-radius:0px 0px 0px 0px;
-    border-bottom:0.25rem dashed var(--gold);
- }
-
- #do-section-img-hr-bottom-right {
-    width: 150%;
-    position: relative;
-    top: -98px;
-    height:200px;
-    border-style:dashed;
-    border-color:var(--gold);
-    border-width:0.25rem 0 0 0;
-    border-radius:200px 0px 0px 0px;
-    border-top: 0.25rem dashed var(--gold);
-    transform: rotate(180deg);
-
- }
-
-#do-section-img-hr-bottom-right:before {
-    display:block;
-    height:200px;
-    margin-top:-204px;
-    border-style:dashed;
-    border-color:var(--gold);
-    border-width:0 0 0.25rem 0;
-    border-radius:0px 0px 0px 0px;
-    border-bottom:0.25rem dashed var(--gold);
-    transform: rotate(180deg);
- }
-
- #do-section-img-hr-bottom-left {
-    width: 150%;
-    position: relative;
-    top: -98px;
-    height:200px;
-    border-style:dashed;
-    border-color:var(--gold);
-    border-width:0.25rem 0 0 0;
-    border-radius:0px 200px 0px 0px;
-    border-top: 0.25rem dashed var(--gold);
-    transform: rotate(180deg);
-
- }
-
-#do-section-img-hr-bottom-left:before {
-    display:block;
-    height:200px;
-    margin-top:-204px;
-    border-style:dashed;
-    border-color:var(--gold);
-    border-width:0 0 0.25rem 0;
-    border-radius:0px 0px 0px 0px;
-    border-bottom:0.25rem dashed var(--gold);
-    transform: rotate(180deg);
- }
-
- .do-arrow-icon-left{
-    font-size: 4rem;
-    color: var(--gold);
-    position: relative;
-    left: 0rem;
-    transform: rotate(180deg) rotateY(180deg);
- }
-
- .do-arrow-icon-right{
-   font-size: 4rem;
-   color: var(--gold);
-   position: relative;
-   left: 0rem;
-   transform: rotate(180deg) ;
-}
-
-@media (min-width: 1400px) {
-   .do-arrow-icon-left{
-      left: -1rem;
-   }
-   .do-arrow-icon-right{
-      left: 3rem;
-   }
-}
-
-.do-arrow-icon-bottom-left{
-   font-size: 4rem;
-   color: var(--gold);
-   position: relative;
-   transform: rotate(90deg) rotateY(180deg);
-   bottom: 1rem;
-}
-
-.do-arrow-icon-bottom-right{
-   font-size: 4rem;
-   color: var(--gold);
-   position: relative;
-   transform: rotate(90deg);
-   left: -1rem;
- }
-
-@media (min-width: 992px) {
-   .do-arrow-icon-bottom-right{
-      transform: rotate(270deg);
-      left: 2rem!important;    
-   }
-   .do-arrow-icon-bottom-left{
-      left: 2rem;
-      bottom: 0rem!important;    
-   }
-   .do-section-img-hr{
-      position: relative;
-      left: 2rem;
-   }
-   #do-section-img-hr-top-left{
-      left: 2rem;
-   }
-   #do-section-img-hr-top-right{
-      left: 2rem;
-   }
- }
-
- .collapse{
+.collapse{
    background-color: #fff;
- }
- 
- .q-span{
+}
+
+.q-span{
    position: relative;
    top: 25%;
    left: 60%;
@@ -292,5 +179,4 @@ div:has(.q-span:hover) > #painting:not(.show){
    font-size: 5rem;
    cursor: pointer;
    border-radius: 50%;
-
- }
+}

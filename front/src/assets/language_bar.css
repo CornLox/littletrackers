@@ -15,7 +15,7 @@
   @media (min-width: 578px) {
     #language-bar {
       margin: 1.875rem 1.25rem 1.25rem 0;
-      top:0
+      top:0;
     }
   }
 
@@ -25,9 +25,15 @@
 
   .language-tab{
     color: var(--white);
-    font-size: x-large;
+    font-size: large;
     font-weight: var(--medium);
     font-family: 'Mansalva';
+  }
+
+  @media (min-width: 578px) {
+    .language-tab{
+    font-size: x-large;
+    }
   }
 
   .language-tab.active{

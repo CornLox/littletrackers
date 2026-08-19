@@ -13,7 +13,7 @@ function TopBanner({ title, background }) {
             />
 
             <div id="top-caption">
-              <h1>{title}</h1>
+              {/* <h1>{title}</h1> */}
               {/* <p>Ότι πουν τα παιδιά!</p> */}
             </div>
           </div>

@@ -235,7 +235,7 @@ function Masonry() {
   }, [activeGenres, measure]);
 
   return (
-    <div className="container">
+    <div id="masonry"className="container">
       {genreKeys.length > 0 && (
         <div className="masonry-genres" role="group">
           {genreKeys.map((key) => {
@@ -248,7 +248,7 @@ function Masonry() {
                 aria-pressed={active}
                 onClick={() => toggleGenre(key)}
               >
-                {genreLabels.get(key) || key}
+                {genreLabels.get(key) || key}  {(active ? "\u2714" : "") }
               </button>
             );
           })}

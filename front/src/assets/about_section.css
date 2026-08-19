@@ -48,7 +48,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .img-col{   
         position: static;
         width: 50%;

@@ -41,16 +41,16 @@ function BurgerMenu() {
                 {t("nav.about")}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/#do-section" onClick={closeMenu}>
                 {t("nav.do")}
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to="/#how-section" onClick={closeMenu}>
                 {t("nav.how")}
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/work" onClick={closeMenu}>
                 {t("nav.workshops")}

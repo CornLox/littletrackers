@@ -28,7 +28,7 @@ function BackToTheTop() {
       id="back-to-the-top"
       title="Back to the top"
     >
-      &#11165;
+      {'\u2B9D'}
     </button>
   );
 }

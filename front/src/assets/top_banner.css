@@ -51,8 +51,8 @@
 #top-banner .top-inner,
 #top-banner .top-item,
 #top-banner .img-wrapper {
-    height: 100vh;
-    max-height: 100vh;
+    height: 75vh;
+    max-height: 75vh;
 }
 
 /* Mobile-safe viewport height (prevents the "short" look on iOS/Android) */

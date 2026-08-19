@@ -1,5 +1,11 @@
 @import "./style.css";
 
+
+#masonry{
+    margin-top: var(--large-space);
+    margin-bottom: var(--large-space);
+}
+
 .masonry-img{
     max-width:100%!important;
     max-height: auto!important;
@@ -95,7 +101,8 @@
     justify-content: center;
     gap: 0.5rem;
     margin-bottom: 1.75rem;
-    padding: 0 1rem;
+    padding-top: var(--mid-space);
+    padding-bottom: var(--large-space);
 }
 
 .masonry-genre-btn{

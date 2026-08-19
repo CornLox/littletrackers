@@ -9,7 +9,7 @@
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     border-radius: none;
-    background-color: var(--dlack); /* Set a background color */
+    background-color: transparent; /* Set a background color */
     color: var(--gold); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 0.125rem 0.75rem ; /* Some padding */

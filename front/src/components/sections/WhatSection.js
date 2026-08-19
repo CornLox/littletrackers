@@ -107,7 +107,7 @@ function WhatSection() {
                 </p>
               </a>
             </div>
-            <div className="collumn col-lg-3">
+            {/* <div className="collumn col-lg-3">
               <a href={link2} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl5">{title2}</span>
@@ -124,42 +124,8 @@ function WhatSection() {
                   {text2_2} <b>{page_2}</b>
                 </p>
               </a>
-            </div>
-            <div className="collumn col-lg-3">
-              <a href={link3} target="_blank" className="article-link">
-                <div className="head">
-                  <span className="headline hl1">{title3}</span>
-                  <p>
-                    <span className="headline hl2">{author3}</span>
-                  </p>
-                </div>
-                <p>{text3_1}</p>
-                <figure className="figure">
-                  <img className="media" src={spiel} alt="" />
-                  <figcaption className="figcaption"></figcaption>
-                </figure>
-                <p>
-                  <span className="citation">"{citation3}"</span>
-                  {text3_2} <b>{page_3}</b>
-                </p>
-              </a>
-            </div>
-            <div className="collumn col-lg-3">
-              <a href={link4} target="_blank" className="article-link">
-                <div className="head">
-                  <span className="headline hl3">{title4}</span>
-                  <p>
-                    <span className="headline hl4">{author4}</span>
-                  </p>
-                </div>
-                <p>{text4_1}</p>
-                <p>
-                  {text4_2} <b>{page_4}</b>
-                </p>
-              </a>
-            </div>
-
-            <div className="collumn col-lg-3">
+            </div> */}
+             <div className="collumn col-lg-3">
               <a href={link5} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl1">{title5}</span>
@@ -178,6 +144,41 @@ function WhatSection() {
                 </p>
               </a>
             </div>
+            {/* <div className="collumn col-lg-3">
+              <a href={link3} target="_blank" className="article-link">
+                <div className="head">
+                  <span className="headline hl1">{title3}</span>
+                  <p>
+                    <span className="headline hl2">{author3}</span>
+                  </p>
+                </div>
+                <p>{text3_1}</p>
+                <figure className="figure">
+                  <img className="media" src={spiel} alt="" />
+                  <figcaption className="figcaption"></figcaption>
+                </figure>
+                <p>
+                  <span className="citation">"{citation3}"</span>
+                  {text3_2} <b>{page_3}</b>
+                </p>
+              </a>
+            </div> */}
+            <div className="collumn col-lg-3">
+              <a href={link4} target="_blank" className="article-link">
+                <div className="head">
+                  <span className="headline hl3">{title4}</span>
+                  <p>
+                    <span className="headline hl4">{author4}</span>
+                  </p>
+                </div>
+                <p>{text4_1}</p>
+                <p>
+                  {text4_2} <b>{page_4}</b>
+                </p>
+              </a>
+            </div>
+
+           
 
 
 
