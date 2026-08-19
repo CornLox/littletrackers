@@ -123,48 +123,46 @@ div:has(.q-span:hover) > #painting:not(.show){
 #theater-span.show{
    transition: 1s all;
    font-weight: bold;
-   filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(-90deg);
+   color: pink;
 }
 
 #music-span.show{
    transition: 1s all;
    font-weight: bold;
-   
-   filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(90deg);
+   color: greenyellow;
 }
 
 #painting-span.show{
    transition: 1s all;
    font-weight: bold;
-   filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(180deg);
+   color: aqua;
 }
 
 #myth-span.show{
    transition: 1s all;
    font-weight: bold;
-   filter: invert(0.485) sepia(1)  contrast(3.5);
+   color: yellow;
 }
 
 @media (max-width: 991px) {
    #theater-span{
       font-weight: bold;
-      filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(-90deg);
+      color: pink;
    }
 
    #music-span{
       font-weight: bold;
-      filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(90deg);
+      color: greenyellow;
    }
 
    #painting-span{
       font-weight: bold;
-      
-      filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(180deg);
+      color: aqua;
    }
 
    #myth-span{
       font-weight: bold;
-      filter: invert(0.485) sepia(1)  contrast(3.5);
+      color: yellow;
    }
 }
 
