@@ -12,7 +12,7 @@
     background-color: transparent; /* Set a background color */
     color: var(--gold); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 0.125rem 0.75rem ; /* Some padding */
+    padding: 0.0625rem 0.75rem 0.5rem 0.75rem ; /* Some padding */
     font-size: 2rem; /* Increase font size */
     font-weight: var(--bold);
   }
