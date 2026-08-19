@@ -29,7 +29,14 @@
 @media (min-width: 992px){
     .modal-content{ 
     padding: 10%;  
+    }
 }
+
+@media (min-width: 768px){
+
+.modal-body{
+    font-size: 1.25rem;
+    }
 }
 
 

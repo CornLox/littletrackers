@@ -129,13 +129,14 @@ div:has(.q-span:hover) > #painting:not(.show){
 #music-span.show{
    transition: 1s all;
    font-weight: bold;
-   filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(180deg);
+   
+   filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(90deg);
 }
 
 #painting-span.show{
    transition: 1s all;
    font-weight: bold;
-   filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(90deg);
+   filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(180deg);
 }
 
 #myth-span.show{
@@ -152,12 +153,13 @@ div:has(.q-span:hover) > #painting:not(.show){
 
    #music-span{
       font-weight: bold;
-      filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(180deg);
+      filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(90deg);
    }
 
    #painting-span{
       font-weight: bold;
-      filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(90deg);
+      
+      filter: invert(0.485) sepia(1)  contrast(3.5) hue-rotate(180deg);
    }
 
    #myth-span{

@@ -12,6 +12,11 @@ import circle1 from "../../images/drama.png";
 import circle2 from "../../images/music.png";
 import circle3 from "../../images/paint.png";
 import circle4 from "../../images/myth.png";
+// colored versions, shown once a circle is fully cleared of sand
+import circle1Color from "../../images/drama-color.png";
+import circle2Color from "../../images/music-color.png";
+import circle3Color from "../../images/paint-color.png";
+import circle4Color from "../../images/myth-color.png";
 
 // ---- Trail tunables ---------------------------------------------------------
 const CORNER = 100; // rounded-corner radius of the loop (matches .do-loop CSS)
@@ -250,26 +255,14 @@ function DoSection() {
             </div>
 
             <div className="row row-do mt-lg-5">
-              {/* -------- top row: theater · music · painting -------- */}
+              {/* -------- top row: music · theater · painting -------- */}
               <div className="col-lg-2 g-0 d-none d-lg-flex" />
-              <div
-                className="col-lg-2 g-0 d-none d-lg-flex"
-                data-trailpoint="theater"
-              >
-                <SandCircle
-                  image={circle1}
-                  cleared={cleared.theater}
-                  onCleared={() => clear("theater")}
-                  label={t("do.theater")}
-                />
-              </div>
-              <div className="col-lg-1 g-0 d-none d-lg-flex" />
               <div
                 className="col-lg-2 g-0 d-none d-lg-flex"
                 data-trailpoint="music"
               >
                 <SandCircle
-                  image={circle2}
+                  image={cleared.music ? circle2Color : circle2}
                   cleared={cleared.music}
                   onCleared={() => clear("music")}
                   label={t("do.music")}
@@ -278,10 +271,22 @@ function DoSection() {
               <div className="col-lg-1 g-0 d-none d-lg-flex" />
               <div
                 className="col-lg-2 g-0 d-none d-lg-flex"
+                data-trailpoint="theater"
+              >
+                <SandCircle
+                  image={cleared.theater ? circle1Color : circle1}
+                  cleared={cleared.theater}
+                  onCleared={() => clear("theater")}
+                  label={t("do.theater")}
+                />
+              </div>
+              <div className="col-lg-1 g-0 d-none d-lg-flex" />
+              <div
+                className="col-lg-2 g-0 d-none d-lg-flex"
                 data-trailpoint="painting"
               >
                 <SandCircle
-                  image={circle3}
+                  image={cleared.painting ? circle3Color : circle3}
                   cleared={cleared.painting}
                   onCleared={() => clear("painting")}
                   label={t("do.arts")}
@@ -293,12 +298,12 @@ function DoSection() {
               <div className="col-12 py-5 px-0 mx-0">
                 <p className="text-center" data-trailpoint="para">
                   {t("do.intro")}
-                  <span id="theater-span" className={spanClass("theater")}>
-                    {t("do.theater")}
-                  </span>
-                  {t("do.frag1")}
                   <span id="music-span" className={spanClass("music")}>
                     {t("do.music")}
+                  </span>
+                  {t("do.frag1")}
+                  <span id="theater-span" className={spanClass("theater")}>
+                    {t("do.theater")}
                   </span>
                   {t("do.frag2")}
                   <span id="painting-span" className={spanClass("painting")}>
@@ -321,7 +326,7 @@ function DoSection() {
                 data-trailpoint="myth"
               >
                 <SandCircle
-                  image={circle4}
+                  image={cleared.myth ? circle4Color : circle4}
                   drainable={false}
                   forceDrain={trioDone}
                   cleared={cleared.myth}

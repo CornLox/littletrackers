@@ -28,6 +28,8 @@ function Footer() {
               </a>
             </div>
             <div className="col-12 col-md-4 col-lg-4 flex-column d-flex mb-4 mb-md-0">
+              <h4 className="contact-title-footer  mb-4">{t("footer.contact")}</h4>
+                  
               <div className="justify-content-center align-content-center d-flex flex-wrap">
                 <a href="mailto:mikroi.ichneftes@gmail.com" className="footer-logo-social">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">

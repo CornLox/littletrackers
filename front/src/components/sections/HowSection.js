@@ -51,7 +51,7 @@ function HowSection() {
                       alt={title}
                     />
                     <div className="card-body">
-                      <p className="card-text">{title}</p>
+                      <p className="card-text">{title} <span className="click-span">{'\u203A'}</span></p>
                     </div>
                     <Modal
                       modal_id={card.id}

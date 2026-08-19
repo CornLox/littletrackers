@@ -4,11 +4,11 @@
     "subtitle": "Creative Team"
   },
   "nav": {
-    "home": "Αρχική",
-    "about": "Who we are",
+    "home": "Home",
+    "about": "Our crew",
     "do": "What we do",
     "how": "How we do it",
-    "workshops": "Workshops",
+    "workshops": "Our tracks",
     "press": "What they wrote about us",
     "contact": "Contact"
   },
@@ -29,10 +29,10 @@
     "p2": "Why ancient drama? Although its stories come from a distant world, the questions they raise remain relevant to us today and continue to resonate with contemporary life. This ongoing dialogue between past and present is what interests us and lies at the heart of our work. Through drama education, we aim to create a space where children and adults can engage with ancient drama, interpret it, and discover their own connections to it."
   },
   "team": {
-    "title": "Our team"
+    "title": "Our crew"
   },
   "work": {
-    "title": "Our work",
+    "title": "Our tracks",
     "tracking": "Tracking the Performance...",
     "by": "Directed by"
   },
@@ -89,5 +89,8 @@
   "contact": {
     "partners": "Our partners:",
     "friends": "Our friends:"
+  },
+  "footer":{
+    "contact": "Find us"
   }
 }

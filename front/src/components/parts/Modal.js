@@ -153,6 +153,7 @@ function Modal({
               {/* Legacy layout — used by HowSection. Header holds the title;
                   the picture sits in the body and (at lg+) floats left so the
                   text wraps around it, like the programme modal. */}
+                  
               <div className="modal-header">
                 <h5 className="modal-title" id={modal_id + "ModalLabel"}>
                   {modal_title}

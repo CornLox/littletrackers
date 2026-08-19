@@ -45,3 +45,10 @@
     max-width:5rem;
 }
 
+.contact-title-footer{
+    font-family: "Mansalva";
+    color: var(--white);
+    text-align: center;
+
+}
+
