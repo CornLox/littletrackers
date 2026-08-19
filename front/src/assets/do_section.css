@@ -51,6 +51,16 @@
     fill: #e9cfa1;              /* the prints are solid sand-cream */
 }
 
+/* mobile-only footprint "signature": a few toddler steps under the paragraph,
+   walking from mid-screen toward the right edge. The desktop trail is hidden
+   below lg, so this gives small screens a little of the same character.
+   Shown only below lg via the d-lg-none class on the element. */
+.do-foot-signature{
+    position: relative;
+    height: 50px;
+    margin-top: 1rem;
+}
+
 .row-do{
     position: relative;
     z-index: 2;                 /* circles + text sit above the trail */

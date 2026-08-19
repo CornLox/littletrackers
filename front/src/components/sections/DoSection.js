@@ -317,6 +317,36 @@ function DoSection() {
                 </p>
               </div>
 
+              {/* mobile-only footprint "signature": a few toddler steps walking
+                  toward the right edge under the paragraph (the desktop trail is
+                  hidden below lg) */}
+              <div
+                className="col-12 d-lg-none do-foot-signature"
+                aria-hidden="true"
+              >
+                {[0, 1, 2, 3, 4].map((i) => {
+                  const isRight = i % 2 === 1;
+                  return (
+                    <svg
+                      key={i}
+                      className={`do-foot ${
+                        isRight ? "do-foot-right" : "do-foot-left"
+                      }`}
+                      width="20"
+                      height="26"
+                      viewBox="0 0 24 30"
+                      style={{
+                        left: `${50 + i * 10}%`,
+                        top: isRight ? 22 : 6,
+                        transform: "rotate(90deg)",
+                      }}
+                    >
+                      {isRight ? <FootRightShape /> : <FootLeftShape />}
+                    </svg>
+                  );
+                })}
+              </div>
+
               {/* -------- bottom row: myth / drama (centre) -------- */}
               <div className="col-lg-2 g-0 d-none d-lg-flex" />
               <div className="col-lg-1 g-0 d-none d-lg-flex" />
