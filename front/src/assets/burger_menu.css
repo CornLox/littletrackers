@@ -164,6 +164,20 @@
 
 @media (orientation: landscape) and (max-height: 575px){
   .change-bg {
-    height: 160%;
+    height: 150%;
+  }
+
+  /* Landscape phones are short: reclaim the big top margin and tighten the
+     nav so every item stays on screen (otherwise the last links fall below
+     the fold after rotating). */
+  #menu-bar{
+    margin-top: 0.6rem;
+    margin-bottom: 0.4rem;
+  }
+  .nav li{
+    padding: 0.3rem 0;
+  }
+  .nav li a{
+    font-size: 1.15rem;
   }
 }
