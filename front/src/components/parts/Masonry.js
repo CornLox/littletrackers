@@ -25,7 +25,6 @@ function Masonry() {
   const gridRef = useRef(null);
   const msnryRef = useRef(null);
   const [markers, setMarkers] = useState([]);
-  const [gridHeight, setGridHeight] = useState(0);
 
   // Which genres are currently shown. `null` until we know the genres, and
   // treated as "all visible" (the default) both before and until a toggle.
@@ -192,7 +191,6 @@ function Masonry() {
     }
 
     setMarkers(next);
-    setGridHeight(grid.offsetHeight);
   }, []);
 
   // Re-measure on first paint, image loads, resize, and any reflow.
@@ -235,7 +233,7 @@ function Masonry() {
   }, [activeGenres, measure]);
 
   return (
-    <div id="masonry"className="container">
+    <div className="container">
       {genreKeys.length > 0 && (
         <div className="masonry-genres" role="group">
           {genreKeys.map((key) => {
@@ -248,7 +246,7 @@ function Masonry() {
                 aria-pressed={active}
                 onClick={() => toggleGenre(key)}
               >
-                {genreLabels.get(key) || key}  {(active ? "\u2714" : "") }
+                {genreLabels.get(key) || key}
               </button>
             );
           })}
@@ -261,7 +259,6 @@ function Masonry() {
         <div
           className="masonry-timeline"
           aria-hidden="true"
-          style={{ height: gridHeight || undefined }}
         >
           <span className="masonry-timeline-line" />
           {markers.map((m) => (

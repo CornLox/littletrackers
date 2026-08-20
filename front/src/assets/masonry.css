@@ -1,11 +1,5 @@
 @import "./style.css";
 
-
-#masonry{
-    margin-top: var(--large-space);
-    margin-bottom: var(--large-space);
-}
-
 .masonry-img{
     max-width:100%!important;
     max-height: auto!important;
@@ -47,6 +41,9 @@
     position: absolute;
     left: 0;
     top: 0;
+    bottom: 0;                 /* stretch to the grid's height (no JS) so the
+                                  rail can never lag behind a shrunk grid on
+                                  rotate and leave trailing white space */
     width: 4.25rem;
     pointer-events: none;      /* clicks pass through to the grid */
     z-index: 3;
@@ -101,8 +98,7 @@
     justify-content: center;
     gap: 0.5rem;
     margin-bottom: 1.75rem;
-    padding-top: var(--mid-space);
-    padding-bottom: var(--large-space);
+    padding: 0 1rem;
 }
 
 .masonry-genre-btn{
