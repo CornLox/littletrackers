@@ -2,13 +2,13 @@
 
 
 /* Anchor for the absolutely-placed heading below. */
-.ad-txt{
+.festival-txt{
     position: relative;
 }
 
-.ad-txt > h1{
+.festival-txt > h1{
     /* Was `position: relative`, which left the h1's original line reserved at
-       the top of .ad-txt (an empty white band above the image). `absolute`
+       the top of .festival-txt (an empty white band above the image). `absolute`
        takes it out of flow so that band collapses; `top: 13rem` with the
        default (static) left keeps the letters exactly where they were. */
     position: absolute;
@@ -20,7 +20,7 @@
 }
 
 
-.ad-banner{
+.festival-banner{
     height: 26rem;
     max-height: 1335px;
     background-position: 4% 98%;

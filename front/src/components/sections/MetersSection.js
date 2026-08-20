@@ -86,6 +86,16 @@ function MetersSection() {
 
   return (
     <section id="meters-section" ref={sectionRef}>
+      <div className="meters-wave">
+        <svg
+          viewBox="0 -20 700 60"
+          width="100%"
+          height="60"
+          preserveAspectRatio="none"
+        >
+        <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" />
+        </svg>
+      </div>
       <div className="container">
         <Title title={t("meters.title")} hrId="meters-section-hr" />
         <div className="row justify-content-center">

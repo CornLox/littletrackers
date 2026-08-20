@@ -11,7 +11,8 @@ import BackTotheTop from "../components/parts/BackToTheTop";
 import HowSection from "../components/sections/HowSection";
 import MetersSection from "../components/sections/MetersSection";
 import Footer from "../components/sections/Footer";
-import AdBanner from "../components/parts/AdBanner";
+import FestivalBanner from "../components/parts/FestivalBanner";
+import SaidSection from "../components/sections/SaidSection";
 
 
 function Home() {
@@ -25,10 +26,12 @@ function Home() {
       <FixedBanner />
       <DoSection />
       <HowSection />
+      <SaidSection />
       <MetersSection />
-      <AdBanner />
+      <FestivalBanner />
       <ContactSection />
       <BackTotheTop />
+      
       <Footer />
     </>
   );

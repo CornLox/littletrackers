@@ -90,6 +90,17 @@
     "partners": "Our partners:",
     "friends": "Our friends:"
   },
+  "said":{
+        "title": "What they said about us",
+         "items": {
+          "1": {
+            "text": "Nisos loved Mikroi Ichneytes. We will definitely bring him back. The mask he took home with him is sure to be his favourite toy for a long time. Thank you for the wonderful experience you gave our child."
+          },
+          "2": {  
+            "text": "Anafi enthusiastically told us all about her journey with Mikroi Ichneytes. She keeps asking when we can bring her back, while constantly singing the song you taught her. Perhaps the best experience she has ever had."
+      }
+    }
+  },
   "footer":{
     "contact": "Find us"
   }

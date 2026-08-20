@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "../../assets/carousel_banner.css";
 import slide1 from "../../images/empathy.jpg";
@@ -8,6 +8,23 @@ import slide4 from "../../images/challenge.jpg";
 
 function CarouzelBanner() {
   const { t } = useTranslation();
+
+  // Bootstrap auto-inits carousels from data-bs-ride on page load, but this one
+  // is rendered by React afterwards, so it's never initialised — which means no
+  // autoplay and, crucially, no touch-swipe handlers on mobile. Create the
+  // instance explicitly on mount (bootstrap.bundle is loaded via CDN in
+  // index.html, so it's on window).
+  useEffect(() => {
+    const el = document.getElementById("banner");
+    if (!el || !window.bootstrap || !window.bootstrap.Carousel) return;
+    const carousel = window.bootstrap.Carousel.getOrCreateInstance(el, {
+      ride: "carousel",
+      touch: true,
+      interval: 5000,
+    });
+    return () => carousel.dispose();
+  }, []);
+
   return (
     <>
       <div id="banner" className="carousel slide" data-bs-ride="carousel">

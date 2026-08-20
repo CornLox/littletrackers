@@ -1,7 +1,10 @@
 @import "./style.css";
 
 #banner{
-    height: 100vh!important;
+    /* Height is defined (dvh-aware) by the grouped rules further down. Forcing
+       100vh here with !important overrode that dvh height, so on Android the
+       banner grew taller than the visible viewport and the indicators sat
+       below the fold. */
     max-height: 100vh;
 }
 
