@@ -19,6 +19,10 @@
     color: var(--blue);
 }
 
+#said-section-hr > hr{
+    color: var(--gold);
+}
+
 /* the "sea": positioning context for the sliding boats and the fixed wave */
 .said-sea{
     position: relative;
