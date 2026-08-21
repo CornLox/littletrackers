@@ -7,6 +7,7 @@ import ananas_logo from "../../images/ananas_logo.jpg";
 import bet_logo from "../../images/bet_logo.jpg";
 import celesta_logo from "../../images/celesta_logo.jpg";
 import kaleidoskopio_logo from "../../images/kaleidoskopio_logo.jpg";
+import myth_loft_logo from "../../images/Myth_Loft_logo.png";
 
 function ContactSection() {
   const { t } = useTranslation();
@@ -61,6 +62,7 @@ function ContactSection() {
                     className="contact-underline mt-2"
                   />
                 </div>
+                <div className="contact-logo-img"></div>
                 <a
                   className="contact-logo-link"
                   target="_blank"
@@ -72,6 +74,7 @@ function ContactSection() {
                     alt=""
                   />
                 </a>
+                
                 <a
                   className="contact-logo-link"
                   target="_blank"
@@ -83,9 +86,12 @@ function ContactSection() {
                     alt=""
                   />
                 </a>
-              </div>
-              <div className="justify-content-between justify-content-md-around d-flex mt-lg-5">
                 <div className="contact-logo-img"></div>
+              </div>
+              <div className="justify-content-between justify-content-md-between d-flex mt-4">
+                <div className="contact-logo-img"></div>
+                <div className="contact-logo-img"></div>
+                
                 <a
                   className="contact-logo-link"
                   target="_blank"
@@ -94,6 +100,17 @@ function ContactSection() {
                   <img
                     className="img-fluid contact-logo-img"
                     src={celesta_logo}
+                    alt=""
+                  />
+                </a>
+                <a
+                  className="contact-logo-link"
+                  target="_blank"
+                  href="https://mythloft.com"
+                >
+                  <img
+                    className="img-fluid contact-logo-img"
+                    src={myth_loft_logo}
                     alt=""
                   />
                 </a>
@@ -109,6 +126,7 @@ function ContactSection() {
                   />
                 </a>
                 <div className="contact-logo-img"></div>
+                
               </div>
             </div>
           </div>
