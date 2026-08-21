@@ -92,14 +92,287 @@
   },
   "said":{
         "title": "What they said about us",
-         "items": {
-          "1": {
-            "text": "Nisos loved Mikroi Ichneytes. We will definitely bring him back. The mask he took home with him is sure to be his favourite toy for a long time. Thank you for the wonderful experience you gave our child."
-          },
-          "2": {  
-            "text": "Anafi enthusiastically told us all about her journey with Mikroi Ichneytes. She keeps asking when we can bring her back, while constantly singing the song you taught her. Perhaps the best experience she has ever had."
-      }
-    }
+         "items":{
+  "1": {
+    "text": "The children came out thrilled."
+  },
+  "2": {
+    "text": "We sent the balloon up into the sky to stop the war."
+  },
+  "3": {
+    "text": "They learned about the myth of Iphigenia in an interactive way and were introduced beautifully to ancient theatre. When we discussed the performance we had seen and the children talked about their activity, it felt as though we had experienced the same thing."
+  },
+  "4": {
+    "text": "After this year's experience (our first with children), it is certain that we will come every year. Congratulations on this amazing activity!"
+  },
+  "5": {
+    "text": "Everything was even better than expected."
+  },
+  "6": {
+    "text": "Unfortunately, our child gives us only general descriptions and no details at all."
+  },
+  "7": {
+    "text": "It would be helpful to receive information from you about what the children do during the workshop, since some children may give only a vague picture of what happens there."
+  },
+  "8": {
+    "text": "The red wall was nice, as was the walk in the little wooded area."
+  },
+  "9": {
+    "text": "The children were thrilled by the activity."
+  },
+  "10": {
+    "text": "It was a very nice experience for my little one, and she left very impressed. And while the performance lasted, I felt reassured that my child was well, in a protected environment with experienced people."
+  },
+  "11": {
+    "text": "She remembers many of the activities they did, such as the crafts and the story, and she liked that it all ended with the balloon they released into the sky."
+  },
+  "12": {
+    "text": "She wanted to learn more details about the story of Iphigenia."
+  },
+  "13": {
+    "text": "I couldn't suggest any improvements, since the program was excellent and the children left thrilled... The only thing I would suggest would be more places, so that availability is a little easier to find."
+  },
+  "14": {
+    "text": "They asked us what wealth means to us, what they made during the session (two dresses, one gold and one black/white), and they played a game where they were the stones and the teacher played Wealth (child aged 6)."
+  },
+  "15": {
+    "text": "She liked it very much and did not get tired at all (even though our performance started late)."
+  },
+  "16": {
+    "text": "It would be nice if the children could also have a tour of the ancient theatre site earlier."
+  },
+  "17": {
+    "text": "A more detailed information file tailored to each performance would be useful (activity schedule, educators, etc.), as well as some follow-up feedback afterward, e.g. we did this, we talked about that."
+  },
+  "18": {
+    "text": "It met my needs in every way. Safety, creativity, interactiveness, comfort, and many more."
+  },
+  "19": {
+    "text": "He has learned to interact in a more creative way."
+  },
+  "20": {
+    "text": "Yes, I would definitely choose this program again and I recommend it to all parents."
+  },
+  "21": {
+    "text": "We are still discussing, from 'The Birds,' what they would like to change in order for us to return to the city. From 'The Bacchae,' we kept the gods, while the masks and the wreaths of Dionysus still decorate their desks."
+  },
+  "22": {
+    "text": "No, we would choose it again. The children have already decided that next year they will come at least two more times."
+  },
+  "23": {
+    "text": "It would perhaps be nice, since the program starts so much earlier, to also take a walk and visit the ancient theatre site."
+  },
+  "24": {
+    "text": "She knew almost everything about the plot. She also learned many details about the Egyptians (e.g. the pyramids)."
+  },
+  "25": {
+    "text": "It would be nice (though perhaps quite difficult) if they could visit the theatre for five minutes to experience its atmosphere."
+  },
+  "26": {
+    "text": "They were creatively occupied during the performance we parents attended; they simply mentioned that they did not like the workshop."
+  },
+  "27": {
+    "text": "They were asked to draw ancient gods, and they did not like that activity."
+  },
+  "28": {
+    "text": "It is essential in order to keep the children occupied while the adults attend the performance at Epidaurus, since there is no other way."
+  },
+  "29": {
+    "text": "More activities so that they cover the duration of the adults' performance."
+  },
+  "30": {
+    "text": "The children learned a lot about the performance and after three hours they were extremely excited."
+  },
+  "31": {
+    "text": "They had previous experience, but they still liked it very much and did not get tired at all."
+  },
+  "32": {
+    "text": "It would be important for the children to be able to visit the Ancient Theatre of Epidaurus. Also, it would be more interesting if part of the workshop took place outdoors, in nature."
+  },
+  "33": {
+    "text": "Unfortunately, I don't remember much. Our child told us that they played the birds, that three characters came in—a teacher, a general, and an engineer—and that it had a happy ending. They were not punished, and it had a happy ending."
+  },
+  "34": {
+    "text": "It was perfect. Of course I would choose it again!"
+  },
+  "35": {
+    "text": "My little girl was thrilled with your program! Congratulations on the organization and quality of your program!"
+  },
+  "36": {
+    "text": "My little girl talked a lot about 'The Suppliants' and Pelasgus."
+  },
+  "37": {
+    "text": "They liked the dramatization and music parts."
+  },
+  "38": {
+    "text": "Interesting, unexpectedly entertaining."
+  },
+  "39": {
+    "text": "Thank you very much for these activities, because you made it possible for us parents with young children to attend a performance at Epidaurus."
+  },
+  "40": {
+    "text": "It is very interesting that the activities are connected to each specific performance."
+  },
+  "41": {
+    "text": "A small delay at registration, then everything was fine."
+  },
+  "42": {
+    "text": "She was very pleased!"
+  },
+  "43": {
+    "text": "For an hour my daughter talked about the beautiful show she took part in, drawing, acting and observing the characters reinterpreted by your actors."
+  },
+  "44": {
+    "text": "My daughter has gained confidence in her interpersonal skills in an international environment"
+  },
+  "45": {
+    "text": "Returning from the holidays spent in the Peloponnese I am telling everyone about the wonderful experience at the Epidaurus theater and the excellent entertainment service for children"
+  },
+  "46": {
+    "text": "Thank you for the wonderful experience that Maddalena will remember forever."
+  },
+  "47": {
+    "text": "My son is thrilled every year."
+  },
+  "48": {
+    "text": "Excellent idea and execution. The children were thrilled."
+  },
+  "49": {
+    "text": "It is an excellent opportunity for a child to come into contact with these works."
+  },
+  "50": {
+    "text": "Because of the language and their young age, the children mostly stayed with each other and perhaps did not absorb much information. They also told us that something frightened them, possibly a mask."
+  },
+  "51": {
+    "text": "A more detailed program would help parents prepare the children better. Especially for international families, relevant material in English would help the children become familiar with the theatre."
+  },
+  "52": {
+    "text": "“We went into a time machine!”"
+  },
+  "53": {
+    "text": "Completely satisfied! Thank you!"
+  },
+  "54": {
+    "text": "She was impressed by the time machine, Iran, and Manolo!"
+  },
+  "55": {
+    "text": "She learned things, although that is not (personally speaking) the number one objective."
+  },
+  "56": {
+    "text": "You help us build memories: this is our second year with a performance + Little Trackers, and it will become a family tradition."
+  },
+  "57": {
+    "text": "Suggestion: establish similar 'Little Trackers' activities for National Theatre performances, one Saturday a month. Guaranteed success :)"
+  },
+  "58": {
+    "text": "This specific activity helps a family visit Epidaurus and get the most out of the performance."
+  },
+  "59": {
+    "text": "Our daughter was very excited by the activity and everything she learned there."
+  },
+  "60": {
+    "text": "Even today, so long afterward, she still talks about Epidaurus."
+  },
+  "61": {
+    "text": "When I came to pick him up, he said: “Mom, why did you come back so quickly? I wanted to be the last one to leave!” He was still talking about his experience the next morning. You managed to create a beautiful connection between the parents' and children's experiences."
+  },
+  "62": {
+    "text": "My daughter liked it very much. She definitely wants to come again."
+  },
+  "63": {
+    "text": "My little girl had a great time and understood the theme of wealth and poverty."
+  },
+  "64": {
+    "text": "Wonderful team. My daughter had an amazing time and learned a lot."
+  },
+  "65": {
+    "text": "THE GIRLS WERE AMAZING."
+  },
+  "66": {
+    "text": "I HAVE NOTHING TO SAY, EVERYTHING WAS GREAT!!"
+  },
+  "67": {
+    "text": "Excellent program; the children were thrilled and are eagerly looking forward to next year."
+  },
+  "68": {
+    "text": "She described with great joy the crafts, the gold, and the museum, as well as the conflict between Wealth and Poverty. The children found a solution through concepts such as solidarity, cooperation, and sharing. “Wealth is family and time with friends.”"
+  },
+  "69": {
+    "text": "She absorbed concepts such as collectivity, solidarity, and sharing. She understood that true wealth is not only money, but also human relationships, family, and friends, through interaction and discussion with other children."
+  },
+  "70": {
+    "text": "It is not just a place where I feel safe leaving the children during the performance. They themselves look forward to it. They leave having learned things, and afterward we all discuss what they experienced there and what we saw."
+  },
+  "71": {
+    "text": "Only in terms of quantity... If possible, offer it for more performances without compromising the quality."
+  },
+  "72": {
+    "text": "THE CHILDREN WERE THRILLED."
+  },
+  "73": {
+    "text": "THE INFORMATION EMAIL ABOUT WHAT THE CHILDREN SHOULD BRING WITH THEM SHOULD PERHAPS BE SENT 1–2 DAYS BEFORE THE PERFORMANCE SO THAT PARENTS HAVE MORE TIME TO PREPARE."
+  },
+  "74": {
+    "text": "All the staff were amazing. This is the third time my children have attended, and every time we leave extremely satisfied."
+  },
+  "75": {
+    "text": "The children commented on the symbols in the performance, the large dog they made out of boxes, and the theatre. Afterward, we were able to discuss the performance together: me as a spectator, and the children through their own experience in the program."
+  },
+  "76": {
+    "text": "I had a really great time, Mom. I didn't get tired or bored."
+  },
+  "77": {
+    "text": "A very clever idea, which gives parents the opportunity to attend a performance at Epidaurus without the stress and worry of childcare, while also giving children the chance to spend time in this important place."
+  },
+  "78": {
+    "text": "After the performance and over the following days, all three children shared with us, each in their own way and with enthusiasm, details from the activities. We talked quite a lot about the play and about how each of them understood Wealth."
+  },
+  "79": {
+    "text": "It was a new and wonderful experience for all three of them. They gained important knowledge about the play and the Theatre of Epidaurus and, with the valuable help of the educators, they worked very well together and happily remained in the workshop."
+  },
+  "80": {
+    "text": "Definitely! The children have already asked us to come to another performance so they can attend the workshop again! And we are already talking with other families about next year!"
+  },
+  "81": {
+    "text": "This first experience, which I admit I was very anxious about, went very well and we will definitely do it again! Thank you for this opportunity and for your valuable contribution!!! I have no suggestion; everything was perfectly organized!"
+  },
+  "82": {
+    "text": "Being able to watch the performance knowing that your child is creatively occupied in a pleasant environment, and then being able to share your experiences on the same theme, is very important."
+  },
+  "83": {
+    "text": "“Why do you say you didn't like the performance? It was perfect!”"
+  },
+  "84": {
+    "text": "The fact that a child can stay in the space for three hours and be completely happy, without complaining, and look forward to going again is incredible to me. The work being done is amazing!"
+  },
+  "85": {
+    "text": "My daughter looks forward every year to visiting the Little Trackers. It is one of the main reasons we visit Epidaurus every year."
+  },
+  "86": {
+    "text": "It is the highlight of the festival for families with children."
+  },
+  "87": {
+    "text": "Amazing program. The little ones were thrilled and found it very interesting, and afterward, from our discussion, I saw that the themes were very well chosen and that it was not just about keeping them occupied—they learned a lot."
+  },
+  "88": {
+    "text": "A little more space during the children's performance, because some children were too far to the side and could not see very well."
+  },
+  "89": {
+    "text": "Congratulations to the whole team! Excellent!!"
+  },
+  "90": {
+    "text": "My daughter was very pleased and understood many things."
+  },
+  "91": {
+    "text": "She is looking forward to next year and asked me for us to come on every day."
+  },
+  "92": {
+    "text": "They should see part of the performance and definitely visit the Ancient Theatre site before the performance begins."
+  },
+  "93": {
+    "text": "Excellent initiative. An unforgettable experience for our little one, whose first language is English. Thank you for the efforts of everyone who took part in the program."
+  }
+}
   },
   "footer":{
     "contact": "Find us"
