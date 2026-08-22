@@ -246,7 +246,7 @@ function Masonry() {
                 aria-pressed={active}
                 onClick={() => toggleGenre(key)}
               >
-                {genreLabels.get(key) || key}
+                {genreLabels.get(key) || key} {"\u2714"}
               </button>
             );
           })}
