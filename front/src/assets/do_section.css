@@ -133,51 +133,51 @@ div:has(.q-span:hover) > #painting:not(.show){
 #theater-span.show{
    transition: 1s all;
    font-weight: bold;
-   color: pink;
+   color: var(--gold);
 }
 
 #music-span.show{
    transition: 1s all;
    font-weight: bold;
-   color: greenyellow;
+   color: var(--gold);
 }
 
 #painting-span.show{
    transition: 1s all;
    font-weight: bold;
-   color: aqua;
+   color: var(--gold);
 }
 
 #myth-span.show{
    transition: 1s all;
    font-weight: bold;
-   color: yellow;
+   color: var(--gold);
 }
 
 @media (max-width: 991px) {
    #theater-span{
       font-weight: bold;
-      color: pink;
+      color: var(--gold);
    }
 
    #music-span{
       font-weight: bold;
-      color: greenyellow;
+      color: var(--gold);
    }
 
    #painting-span{
       font-weight: bold;
-      color: aqua;
+      color: var(--gold);
    }
 
    #myth-span{
       font-weight: bold;
-      color: yellow;
+      color: var(--gold); 
    }
 }
 
 .collapse{
-   background-color: #fff;
+   background-color: var(--white);
 }
 
 .q-span{

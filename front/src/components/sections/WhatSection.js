@@ -35,8 +35,7 @@ const text2_1 =
   "Σήμερα Παρασκευή η Κόκκινη Σβούρα ετοιμάζει τη βαλίτσα της, ετοιμάζεται για Φεστιβάλ, ετοιμάζεται για δημιουργική απασχόληση για παιδιά, ετοιμάζεται να στριφογυρίσει στο Αρχαίο Θέατρο της Επιδαύρου.";
 const text2_2 =
   "Η θεατρολόγος Αγγελική Τσάκωνα απαντά σε όλες τις απορίες της Κόκκινης Σβούρας και εξηγεί ποια είναι η φιλοσοφία του θεατροπαιδαγωγικού προγράμματος των Μικρών Ιχνευτών. ";
-const link2 =
-  "https://www.ertecho.gr/radio/deftero/show/kokkini-svoura/podcast/407526/";
+const link2 = "https://drive.google.com/file/d/1HE-FCdYe1FWOkKIzOj6QDxyjgybjovvs/view?usp=sharing";
 const page_2 = "Σελ. 6";
 
 const title3 = normalizeGreek("Οι Μικροί Ιχνευτές στα βήματα του Κάστορφ");
@@ -47,7 +46,7 @@ const text3_2 =
   "Η πρωτοποριακή ματιά του Φρανκ Κάστορφ στην παράσταση Μήδεια εμπνέει τους Μικρούς Ιχνευτές για την δημιουργία ενός ξεχωριστού θεατροπαιδαγωγικού προγράμματος.";
 const citation3 =
   "Die Farben der entworfenen Kostüme entsprechen einer Seite der Medea";
-const link3 = "https://schul.theater/spielt-doch-keine-rolle/";
+const link3 = "https://drive.google.com/file/d/1WBZGQJstNc7wInHhDbS8_8YwGdtBlhaN/view?pli=1";
 const page_3 = "Σελ. 4";
 
 const title4 = normalizeGreek(
@@ -93,7 +92,7 @@ function WhatSection() {
         </div>
         <div className="content container-fluid">
           <div className="collumns justify-content-center row">
-            <div className="collumn col-lg-3">
+            <div className="collumn col-lg-4">
               <a href={link1} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl3">{title1}</span>
@@ -107,7 +106,7 @@ function WhatSection() {
                 </p>
               </a>
             </div>
-            {/* <div className="collumn col-lg-3">
+            <div className="collumn col-lg-4">
               <a href={link2} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl5">{title2}</span>
@@ -124,8 +123,8 @@ function WhatSection() {
                   {text2_2} <b>{page_2}</b>
                 </p>
               </a>
-            </div> */}
-             <div className="collumn col-lg-3">
+            </div>
+             <div className="collumn col-lg-4">
               <a href={link5} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl1">{title5}</span>
@@ -144,7 +143,7 @@ function WhatSection() {
                 </p>
               </a>
             </div>
-            {/* <div className="collumn col-lg-3">
+            <div className="collumn col-lg-4">
               <a href={link3} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl1">{title3}</span>
@@ -162,8 +161,8 @@ function WhatSection() {
                   {text3_2} <b>{page_3}</b>
                 </p>
               </a>
-            </div> */}
-            <div className="collumn col-lg-3">
+            </div>
+            <div className="collumn col-lg-4">
               <a href={link4} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl3">{title4}</span>
