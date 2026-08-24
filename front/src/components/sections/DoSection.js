@@ -24,10 +24,9 @@ const SIDE_INSET = 0.07; // vertical sides sit this fraction in from each edge (
 const FOOT_STEP = 66; // px between footprints along the trail
 const FOOT_LATERAL = 14; // px each print is nudged to its track (left vs right)
 const LG = 992; // trail is desktop-only, like the circles
+const BOTTOM_PAIRS = 2; // footprints kept on EACH bottom side (L-R, L-R), nearest the corners
 
-// Two distinct toddler footprints (drawn toes-up), so the alternating gait is
-// legible. They are true mirrors of each other — big toe on opposite sides —
-// and carry .do-foot-left / .do-foot-right so you can target either track.
+//They carry .do-foot-left / .do-foot-right.
 function FootLeftShape() {
   return (
     <>
@@ -56,9 +55,10 @@ function FootRightShape() {
   );
 }
 
+
 // parity 0 = left foot on the left track, parity 1 = right foot on the right
-// track. Each print is offset to its own side of the line and rotated to follow
-// the walking direction (the shapes are pre-mirrored, so no scaleX).
+// track. Each print is offset to its own side of the line and rotated to
+// follow the trail direction, exactly like the footprints did.
 function Foot({ x, y, dir, parity }) {
   const isRight = parity === 1;
   const rad = (dir * Math.PI) / 180;
@@ -69,13 +69,9 @@ function Foot({ x, y, dir, parity }) {
     <svg
       className={`do-foot ${isRight ? "do-foot-right" : "do-foot-left"}`}
       width="24"
-      height="30"
-      viewBox="0 0 24 30"
-      style={{
-        left: x - 12 + ox,
-        top: y - 15 + oy,
-        transform: `rotate(${dir + 90}deg)`,
-      }}
+      height="32"
+      viewBox="0 0 24 32"
+      style={{ left: x - 12 + ox, top: y - 16 + oy, transform: `rotate(${dir + 90}deg)` }}
     >
       {isRight ? <FootRightShape /> : <FootLeftShape />}
     </svg>
@@ -194,17 +190,28 @@ function DoSection() {
       const botR = [];
       for (let x = x1 - R - half; x >= xc; x -= FOOT_STEP) botR.push([x, yBot, 180]);
 
+      // botL / botR are generated corner → centre, so capping them keeps the
+      // pairs nearest the corners and drops the ones closest to the myth circle.
       const out = [];
       let id = 0;
-      [topL, topR, sideL, sideR, botL, botR].forEach((seg) => {
-        let j = 0; // gait alternates within each segment → prints straddle the line
-        seg.forEach(([x, y, dir]) => {
+      const segments = [
+        [topL, Infinity],
+        [topR, Infinity],
+        [sideL, BOTTOM_PAIRS * 2],
+        [sideR, BOTTOM_PAIRS * 2],
+        [botL, BOTTOM_PAIRS * 2],
+        [botR, BOTTOM_PAIRS * 2],
+      ];
+      segments.forEach(([seg, keep]) => {
+        let j = 0; // parity alternates within a segment → feet straddle the line
+        for (const [x, y, dir] of seg) {
+          if (j >= keep) break;
           if (!blocked(x, y)) {
             out.push({ x, y, dir, parity: j % 2, id });
             id += 1;
             j += 1;
           }
-        });
+        }
       });
       setFeet(out);
     };
@@ -333,8 +340,8 @@ function DoSection() {
                         isRight ? "do-foot-right" : "do-foot-left"
                       }`}
                       width="20"
-                      height="26"
-                      viewBox="0 0 24 30"
+                      height="27"
+                      viewBox="0 0 24 32"
                       style={{
                         left: `${50 + i * 10}%`,
                         top: isRight ? 22 : 6,

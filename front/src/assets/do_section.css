@@ -38,7 +38,7 @@
     position: absolute;
     border: 0.2rem dashed var(--gold);
     border-radius: 100px;       /* corner radius of the racetrack (match CORNER in DoSection.js) */
-    opacity: 0.55;              /* the guide line stays faint... */
+    opacity: 0;              /* the guide line stays faint... */
 }
 
 .do-foot{
