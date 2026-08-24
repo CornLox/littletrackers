@@ -4,6 +4,9 @@ import Title from "../parts/Title";
 import svoura from "../../images/Deftero_kokkinisvoura.png";
 import spiel from "../../images/Spiel_und_Theater_.jpg";
 import freepress from "../../images/freepress.webp";
+import fourth from "../../images/4th_conference.jpg";
+import balkan from "../../images/Programme_SYNEDRIO_digital_compressed.jpg";
+
 
 function normalizeGreek(text) {
   return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -71,6 +74,29 @@ const text5_2 =
 const link5 = "https://www.eleftherostypos.gr/psychagogia/festival-athinon-epidavrou-okto-chronia-mikroi-ichneftes/amp";
 const page_5 = "Σελ. 10";
 
+const title6 = normalizeGreek(
+  "ΔΗΜΙΟΥΡΓΙΚΗ ΑΠΑΣΧΟΛΗΣΗ ΓΙΑ ΠΑΙΔΙΑ - ΦΕΣΤΙΒΑΛ ΑΘΗΝΩΝ ΕΠΙΔΑΥΡΟΥ: 6 ΧΡΟΝΙΑ ΠΟΡΕΙΑΣ ΣΤΟΝ ΜΥΘΟ"
+);
+const author6 = "Μικροί Ιχνευτές";
+const text6_1 =
+  "Μπορεί το αρχαίο δράμα να μιλήσει στα παιδιά του σήμερα; Στην Επίδαυρο, ένα πρωτότυπο θεατροπαιδαγωγικό πρόγραμμα επιχειρεί εδώ και χρόνια να δώσει τη δική του απάντηση, μετατρέποντας τους μικρούς θεατές σε ενεργούς συμμετέχοντες.";
+const text6_2 =
+  " Η «Δημιουργική Απασχόληση για παιδιά στην Επίδαυρο» του Φεστιβάλ Αθηνών και Επιδαύρου φέρνει παιδιά ηλικίας 5 έως 10 ετών σε επαφή με τους μύθους, τα πρόσωπα και τα διαχρονικά ερωτήματα της αρχαίας τραγωδίας και κωμωδίας, μέσα από το παιχνίδι, τη θεατρική δράση και τη βιωματική μάθηση, την ίδια ώρα που οι γονείς τους παρακολουθούν την παράσταση στο αρχαίο θέατρο.";
+
+  const link6 = "https://drive.google.com/file/d/1XkNjtihoCs1agz0nyj5H2oHUdf_JvDMh/view?usp=sharing";
+const page_6 = "Σελ. 2";
+
+const title7 = normalizeGreek(
+  "Re-activating Myth through Performance-Based Pedagogy"
+);
+const author7 = "Elpida Angeliki Komianoy";
+const text7_1 =
+  "Guns and Roses: Little Trackers (Μικροί Ιχνευτές) and the Learning of Violence, Anger and Conflict";  
+const text7_2 =
+  "Can ancient myth help children reflect on violence and the meaning of weapons today? Through Sophocles’ Ajax, a theatre-pedagogical programme of the Athens Epidaurus Festival invites children to explore anger, loss and aggression through embodied theatrical practice, transforming myth into a living space for reflection and learning.";
+const link7 = "https://www.ntng.gr/en/1-performances/31/current-productions/14405/2nd-inter-balkan-network-of-the-performing-arts-conference";
+const page_7 = "Σελ. 5";
+
 
 
 function WhatSection() {
@@ -91,8 +117,8 @@ function WhatSection() {
           </div>
         </div>
         <div className="content container-fluid">
-          <div className="collumns justify-content-center row">
-            <div className="collumn col-lg-4">
+          <div className="collumns">
+            <div className="collumn">
               <a href={link1} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl3">{title1}</span>
@@ -106,7 +132,7 @@ function WhatSection() {
                 </p>
               </a>
             </div>
-            <div className="collumn col-lg-4">
+            <div className="collumn">
               <a href={link2} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl5">{title2}</span>
@@ -124,7 +150,7 @@ function WhatSection() {
                 </p>
               </a>
             </div>
-             <div className="collumn col-lg-4">
+             <div className="collumn">
               <a href={link5} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl1">{title5}</span>
@@ -143,7 +169,7 @@ function WhatSection() {
                 </p>
               </a>
             </div>
-            <div className="collumn col-lg-4">
+            <div className="collumn">
               <a href={link3} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl1">{title3}</span>
@@ -162,7 +188,7 @@ function WhatSection() {
                 </p>
               </a>
             </div>
-            <div className="collumn col-lg-4">
+            <div className="collumn">
               <a href={link4} target="_blank" className="article-link">
                 <div className="head">
                   <span className="headline hl3">{title4}</span>
@@ -173,6 +199,46 @@ function WhatSection() {
                 <p>{text4_1}</p>
                 <p>
                   {text4_2} <b>{page_4}</b>
+                </p>
+              </a>
+            </div>
+            <div className="collumn">
+              <a href={link6} target="_blank" className="article-link">
+                <div className="head">
+                  <span className="headline hl3">{title6}</span>
+                  <p>
+                    <span className="headline hl4">{author6}</span>
+                  </p>
+                </div>
+                <p>{text6_1}</p>
+                
+                <figure className="figure">
+                  <img className="media" src={fourth} alt="" />
+                  <figcaption className="figcaption"></figcaption>
+                </figure>
+                <p>
+                  {text6_2} <b>{page_6}</b>
+                </p>
+              </a>
+            </div>
+            <div className="collumn">
+              <a href={link7} target="_blank" className="article-link">
+                <div className="head">
+                  <span className="headline hl3">{title7}</span>
+                  <p>
+                    <span className="headline hl4">{author7}</span>
+                  </p>
+                </div>
+                
+                
+                <figure className="figure">
+                  <img className="media" src={balkan} alt="" />
+                  <figcaption className="figcaption"></figcaption>
+                </figure>
+                <p><span className="citation">{text7_1}</span></p>
+                <p>
+                  
+                  {text7_2} <b>{page_7}</b>
                 </p>
               </a>
             </div>

@@ -3,6 +3,7 @@
 
 #what-section{
     padding-top: var(--section-space);
+	padding-bottom: var(--large-space);
     font-family: "Droid Serif", serif;
 	font-size: 14px;
 	color: #2f2f2f;
@@ -57,18 +58,26 @@ p {
 	/* margin: 30px 2% 0 2%; */
 }
 
+.collumns{
+	display: block;                 /* override Bootstrap .row flex */
+	column-count: 3;
+	column-gap: 3rem;
+	column-rule: 1px solid #2f2f2f; /* the vertical newspaper divider */
+}
+
 .collumn {
 	font-size: 14px;
 	line-height: 20px;
-	/* width: 17.5%; */
-	display: inline-block;
-	/* padding: 0 1% 0 1%; */
+	word-spacing: normal;           /* undo the inline-block whitespace hack on .content */
+	display: block;
+	width: auto;
 	vertical-align: top;
-	margin-bottom: 50px;
+	margin: 0 0 30px;
+	/* keep each article whole so it never splits across a column break */
+	break-inside: avoid;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
 	transition: all 0.7s;
-}
-.collumn + .collumn {
-	border-left: 1px solid #2f2f2f;
 }
 .collumn .headline {
 	text-align: center;
@@ -241,23 +250,13 @@ p {
 		display: none;
 	}
 }
-@media only all and (max-width: 1200px) {
-	.collumn {
-		width: 31%;
-	}
-}
 @media only all and (max-width: 900px) {
-	.collumn {
-		width: 47%;
-	}
+	.collumns { column-count: 2; }
 }
 @media only all and (max-width: 600px) {
-	.collumn {
-		width: 100%;
-	}
-	.collumn + .collumn {
-		border-left: none;
-		border-bottom: 1px solid #2f2f2f;
+	.collumns {
+		column-count: 1;
+		column-rule: none;
 	}
 	header {
 		max-width: 320px;
@@ -286,4 +285,3 @@ img:hover{
 	filter:grayscale(0);
 	transition: all 0.35s;
 }
-

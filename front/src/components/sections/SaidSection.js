@@ -25,7 +25,7 @@ function SaidSection() {
     const carousel = window.bootstrap.Carousel.getOrCreateInstance(el, {
       ride: "carousel",
       touch: true,
-      interval: 6000,
+      interval: 10000,
     });
     return () => carousel.dispose();
   }, []);
@@ -47,7 +47,7 @@ function SaidSection() {
                   {/* the boat carrying the review — lingers so it can be read */}
                   <div
                     className={`carousel-item${i === 0 ? " active" : ""}`}
-                    data-bs-interval="6000"
+                    data-bs-interval="10000"
                   >
                     <div className="boat">
                       <span className="boat-mast" aria-hidden="true"></span>
