@@ -130,6 +130,7 @@ function WhatSection() {
                 <p>
                   {text1_2} <b>{page_1}</b>
                 </p>
+                <hr className="end-column-hr" />
               </a>
             </div>
             <div className="collumn">
@@ -148,6 +149,7 @@ function WhatSection() {
                 <p>
                   {text2_2} <b>{page_2}</b>
                 </p>
+                <hr className="end-column-hr" />
               </a>
             </div>
              <div className="collumn">
@@ -164,9 +166,9 @@ function WhatSection() {
                   <figcaption className="figcaption"></figcaption>
                 </figure>
                 <p>
-                  
                   {text5_2} <b>{page_5}</b>
                 </p>
+                <hr className="end-column-hr" />
               </a>
             </div>
             <div className="collumn">
@@ -186,6 +188,7 @@ function WhatSection() {
                   <span className="citation">"{citation3}"</span>
                   {text3_2} <b>{page_3}</b>
                 </p>
+                <hr className="end-column-hr" />
               </a>
             </div>
             <div className="collumn">
@@ -200,6 +203,7 @@ function WhatSection() {
                 <p>
                   {text4_2} <b>{page_4}</b>
                 </p>
+                <hr className="end-column-hr" />
               </a>
             </div>
             <div className="collumn">
@@ -219,6 +223,7 @@ function WhatSection() {
                 <p>
                   {text6_2} <b>{page_6}</b>
                 </p>
+                <hr className="end-column-hr" />
               </a>
             </div>
             <div className="collumn">
@@ -229,25 +234,17 @@ function WhatSection() {
                     <span className="headline hl4">{author7}</span>
                   </p>
                 </div>
-                
-                
                 <figure className="figure">
                   <img className="media" src={balkan} alt="" />
                   <figcaption className="figcaption"></figcaption>
                 </figure>
                 <p><span className="citation">{text7_1}</span></p>
-                <p>
-                  
+                <p>   
                   {text7_2} <b>{page_7}</b>
                 </p>
+                <hr className="end-column-hr" />
               </a>
             </div>
-
-           
-
-
-
-            
           </div>
         </div>
       </section>

@@ -285,3 +285,9 @@ img:hover{
 	filter:grayscale(0);
 	transition: all 0.35s;
 }
+
+.end-column-hr{
+	border-top: 0.125rem solid var(--black);
+	width: 33.33%;
+	margin-top: 1rem;
+}
