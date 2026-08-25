@@ -27,7 +27,7 @@ const LG = 992; // trail is desktop-only, like the circles
 const BOTTOM_PAIRS = 2; // footprints kept on EACH bottom side (L-R, L-R), nearest the corners
 
 //They carry .do-foot-left / .do-foot-right.
-function FootLeftShape() {
+function FootShape(){
   return (
     <>
       <path d="M12 6 C15.8 6 18.2 9 18.2 13 C18.2 17 15.5 19.5 11.6 19.5 C7.8 19.5 5.4 17 5.4 13.2 C5.4 9 8.2 6 12 6 Z" />
@@ -40,20 +40,22 @@ function FootLeftShape() {
     </>
   );
 }
+function FootLeftShape() {
+  return (
+  
+      <FootShape/>
+  
+  );
+}
 
 function FootRightShape() {
   return (
-    <>
-      <path d="M12 6 C8.2 6 5.8 9 5.8 13 C5.8 17 8.5 19.5 12.4 19.5 C16.2 19.5 18.6 17 18.6 13.2 C18.6 9 15.8 6 12 6 Z" />
-      <ellipse cx="13.2" cy="25.3" rx="4.7" ry="3.9" />
-      <circle cx="8.2" cy="3.4" r="2.0" />
-      <circle cx="11.8" cy="2.3" r="1.7" />
-      <circle cx="15.0" cy="2.9" r="1.5" />
-      <circle cx="17.6" cy="4.6" r="1.3" />
-      <circle cx="19.3" cy="7.2" r="1.1" />
-    </>
+   <g transform="translate(24,0) scale(-1,1)">
+      <FootShape />
+    </g>
   );
 }
+
 
 
 // parity 0 = left foot on the left track, parity 1 = right foot on the right
