@@ -28,7 +28,7 @@ const cards = [
   { id: "how_img5", img: how_img5, key: "conscienceAlley" },
   { id: "how_img6", img: how_img6, key: "puppet" },
   { id: "how_img7", img: how_img7, key: "transformationOfMaterials" },
-  { id: "how_img8", img: how_img8, key: "audiovisualMaterial" },
+  { id: "how_img8", img: how_img8, key: "audiovisualCompositionOfSpace" },
   { id: "how_img9", img: how_img9, key: "shadowTheatre" },
   { id: "how_img10", img: how_img10, key: "mapping" },
 ];
