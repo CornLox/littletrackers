@@ -27,16 +27,17 @@ const LG = 992; // trail is desktop-only, like the circles
 const BOTTOM_PAIRS = 2; // footprints kept on EACH bottom side (L-R, L-R), nearest the corners
 
 //They carry .do-foot-left / .do-foot-right.
-function FootShape(){
+function FootShape() {
   return (
     <>
-      <path d="M12 6 C15.8 6 18.2 9 18.2 13 C18.2 17 15.5 19.5 11.6 19.5 C7.8 19.5 5.4 17 5.4 13.2 C5.4 9 8.2 6 12 6 Z" />
-      <ellipse cx="10.8" cy="25.3" rx="4.7" ry="3.9" />
-      <circle cx="15.8" cy="3.4" r="2.0" />
-      <circle cx="12.2" cy="2.3" r="1.7" />
-      <circle cx="9.0" cy="2.9" r="1.5" />
-      <circle cx="6.4" cy="4.6" r="1.3" />
-      <circle cx="4.7" cy="7.2" r="1.1" />
+      {/* flowing sole — soft arch on the inner edge, rounded heel */}
+      <path d="M7 9.6 C5.2 10.1 4.4 12.1 4.7 14.5 C4.9 16.5 5.6 17.8 5.9 19.6 C6.2 21.9 6.6 24.4 8.5 25.9 C9.9 27 12.1 27 13.5 25.9 C15.2 24.5 15.4 22.1 15.1 20.1 C14.9 18.6 14.2 17.9 14.3 16.8 C14.4 15.5 15.5 14.7 15.9 12.9 C16.3 11 15.3 9.4 13.2 9 C11.1 8.7 8.9 8.9 7 9.6 Z" />
+      {/* five graduated, gently fanned toes (big toe on the right) */}
+      <ellipse cx="14.7" cy="5.3" rx="1.95" ry="2.6"  transform="rotate(16 14.7 5.3)" />
+      <ellipse cx="11.8" cy="3.7" rx="1.7"  ry="2.35" transform="rotate(6 11.8 3.7)" />
+      <ellipse cx="9.1"  cy="4"   rx="1.5"  ry="2.1"  transform="rotate(-5 9.1 4)" />
+      <ellipse cx="6.8"  cy="5.6" rx="1.28" ry="1.8"  transform="rotate(-15 6.8 5.6)" />
+      <ellipse cx="5.1"  cy="7.7" rx="1.02" ry="1.5"  transform="rotate(-26 5.1 7.7)" />
     </>
   );
 }
