@@ -1,0 +1,20 @@
+name: workflow-keepalive
+
+on:
+  schedule:
+    - cron: "0 9 */20 * *" # 09:00 UTC every 20 days
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-enable scheduled workflows to reset the 60-day timer
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow enable "keep-render-awake" --repo "${{ github.repository }}" || true
+          gh workflow enable "workflow-keepalive" --repo "${{ github.repository }}" || true

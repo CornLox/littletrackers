@@ -2,7 +2,7 @@ name: keep-render-awake
 
 on:
   schedule:
-    - cron: "*/12 * * * *" # every 12 minutes
+    - cron: "*/10 * * * *" # every 10 minutes
   workflow_dispatch: # lets you run it manually to test
 
 jobs:
