@@ -61,7 +61,7 @@ function Footer() {
                     />
             </div>
           </div>
-          <Copyright name="Μικροί Ιχνευτές · Creative Team"
+          <Copyright name="Ιχνευτές"
             dev_name="Corn Lox"
             dev_link="https://www.linkedin.com/in/georgios-giannakas-843b18203/" />
         </div>
