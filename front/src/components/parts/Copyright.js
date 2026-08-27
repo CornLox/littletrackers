@@ -8,7 +8,7 @@ function Copyright({ name, dev_name, dev_link }) {
     <div className="row copytright-row">
       <div className=" col-12 justify-content-end  d-flex">
         <div>
-          <h6 className="copyright-text">© {year} {name}</h6>
+          <h6 className="copyright-text">{name} · {year} </h6>
         </div>
       </div>
       <div className=" col-12 justify-content-end  d-flex">

@@ -24,10 +24,12 @@
 #footer-logo-title{
     color: var(--gold);
     font-family: "Mansalva";
+    text-align: center;
 }
 #footer-logo-subtitle{
     color: var(--gold);
     font-family: "Mansalva";
+    text-align: center;
 }
 
 /* Let the address break instead of forcing the row (and the page) wider

@@ -1,7 +1,7 @@
 {
   "logo":{
     "title": "Ichneftes",
-    "subtitle": "Creative Team"
+    "subtitle": "Myth, Theater and Education"
   },
   "nav": {
     "home": "Home",
@@ -25,8 +25,8 @@
   },
   "about": {
     "title": "Who we are",
-    "p1": "We are a team of artists and educators formed in 2016 within the framework of the educational programmes of the Athens Epidaurus Festival. We design and deliver drama education programmes for children, drawing inspiration from ancient drama as our starting point. Our experience at Epidaurus forms the foundation of our work, while we continually seek new ways to bring ancient drama closer to diverse audiences.",
-    "p2": "Why ancient drama? Although its stories come from a distant world, the questions they raise remain relevant to us today and continue to resonate with contemporary life. This ongoing dialogue between past and present is what interests us and lies at the heart of our work. Through drama education, we aim to create a space where children can engage with ancient drama, interpret it, and discover their own connections to it."
+    "p1": "We are a team of artists and educators formed in 2016 within the framework of the educational programmes of the Athens Epidaurus Festival. We design and deliver drama education programmes for children and adults, drawing inspiration from ancient drama and contemporary stage interpretations of myth. Our experience at Epidaurus forms the foundation of our work, while we continually seek new ways to bring ancient drama closer to contemporary audiences.",
+    "p2": "Our interest extends across a wide range of theatrical texts and genres: from ancient drama and theatrical mythologies to contemporary dramaturgy and new forms of stage storytelling. We trace the questions, conflicts, and human experiences conveyed by these works, exploring how they resonate with contemporary life. Through drama education, we create a space where children and adults can engage with theatre through experience, interpret it, and discover their own connections to its stories and worlds"
   },
   "team": {
     "title": "Our crew"
