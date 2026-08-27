@@ -9,13 +9,19 @@
     cursor: pointer;
     position: absolute;
     right: 0%;
-    top: -2rem;    
+    top: -1rem;    
+  }
+
+   @media  (min-width: 443px){
+    #language-bar {
+    top: -1.5rem;
+    }
   }
 
   @media (min-width: 578px) {
     #language-bar {
       margin: 1.875rem 1.25rem 1.25rem 0;
-      top:0;
+      top:-0.5rem;
     }
   }
 

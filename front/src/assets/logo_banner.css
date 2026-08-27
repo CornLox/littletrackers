@@ -1,7 +1,7 @@
 @import "./style.css";
 
 #logo{
-    height: 5rem;
+    min-height: 5rem;
     z-index: 2;
     display: block;
     color: var(--white);
@@ -18,6 +18,8 @@
 
 #logo>#logo-title,#logo-subtitle{
     font-family: 'Mansalva';
+    padding-left: var(--section-space);
+    padding-right: var(--section-space);
 }
 
 

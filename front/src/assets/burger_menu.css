@@ -81,11 +81,16 @@
   }
   
   .menu-bg, #menu {
-    top: 0;
+    top: 1rem;
     left: 0;
     position: absolute;
   }
-  
+
+  @media  (min-width: 443px){
+    .menu-bg, #menu {
+    top: 0;
+  }
+  }
   .menu-bg {
     z-index: 1;
     width: 0;
