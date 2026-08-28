@@ -198,12 +198,12 @@ function DoSection() {
       const out = [];
       let id = 0;
       const segments = [
-        [topL, Infinity],
-        [topR, Infinity],
-        [sideL, BOTTOM_PAIRS * 2],
-        [sideR, BOTTOM_PAIRS * 2],
-        [botL, BOTTOM_PAIRS * 2],
-        [botR, BOTTOM_PAIRS * 2],
+        [topL, 0], // [topL, Infinity]
+        [topR, 0], // // [topR, Infinity]
+        [sideL, BOTTOM_PAIRS], // [sideL, BOTTOM_PAIRS * 2]
+        [sideR, BOTTOM_PAIRS], // [sideR, BOTTOM_PAIRS * 2]
+        [botL, BOTTOM_PAIRS],  // [botL, BOTTOM_PAIRS * 2]
+        [botR, BOTTOM_PAIRS],  // [botR, BOTTOM_PAIRS * 2]
       ];
       segments.forEach(([seg, keep]) => {
         let j = 0; // parity alternates within a segment → feet straddle the line
