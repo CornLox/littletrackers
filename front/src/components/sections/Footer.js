@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/footer.css";
 import Copyright from "../parts/Copyright";
 import { useTranslation } from "react-i18next";
-import scallop from "../../images/golden_scallop.png";
+import pygasus from "../../images/pygasus-gold.png";
 
 function Footer() {
   const { t } = useTranslation();
@@ -56,7 +56,7 @@ function Footer() {
             <div className="col-12 col-md-4 justify-content-center justify-content-md-end d-flex align-content-start mb-4 mb-md-0  flex-wrap">
               <img
                       className="img-fluid" id="scallop-img"
-                      src={scallop}
+                      src={pygasus}
                       alt=""
                     />
             </div>
