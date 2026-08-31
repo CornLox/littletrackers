@@ -15,6 +15,8 @@
     display: inline-block;
     overflow: hidden;
     cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .card-img-top{
