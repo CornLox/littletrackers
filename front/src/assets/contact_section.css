@@ -2,7 +2,8 @@
 
 #contact-section{
 
-    margin-top: calc(var(--section-space) / 2) ;
+    margin-top: var(--section-space);
+    margin-bottom: var(--section-space);
 
 }
 
