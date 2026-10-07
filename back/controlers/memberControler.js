@@ -2,7 +2,7 @@ const Member = require("../models/memberModel")
 const mongoose = require("mongoose")
 
 // strip the heavy image buffer before sending a member back as JSON
-const stripPhotoData = (member) => {
+const stripphotoData = (member) => {
     const doc = member.toObject()
     if (doc.photo) delete doc.photo.data
     return doc
@@ -32,7 +32,7 @@ const getMember = async (req,res) => {
 }
 
 // serve the raw photo image bytes for a member
-const getMemberPhoto = async (req,res) => {
+const getMemberphoto = async (req,res) => {
     const {id} = req.params
     if (!mongoose.Types.ObjectId.isValid(id)){
         return res.status(404).json({error: "No such Member"})
@@ -46,18 +46,24 @@ const getMemberPhoto = async (req,res) => {
 }
 
 // create new member
-const createMember = async (req, res) => {
-  const { forename_el,forename_en,surname_el,surname_en,
-  role_el,role_en,cv_el,cv_en,priority } = req.body
-  if (!req.file) {
-    return res.status(400).json({ error: "member photo is required" })
-  }
-  const member = await Member.create({
-    forename_el,forename_en,surname_el,surname_en,
-    role_el,role_en,cv_el,cv_en,priority,
-    photo: { data: req.file.buffer, contentType: req.file.mimetype }
-  })
-  res.status(200).json(stripPhotoData(member))
+const createMember = async (req,res) => {
+    const {name_el,name_en,title_el,title_en,cv_el,cv_en,openingDate} = req.body
+    // add doc to db
+    try{
+        if (!req.file){
+            return res.status(400).json({error: "photo image is required"})
+        }
+        const member = await Member.create({
+            name_el,name_en,title_el,title_en,cv_el,cv_en,openingDate,
+            photo: {
+                data: req.file.buffer,
+                contentType: req.file.mimetype
+            }
+        })
+        res.status(200).json(stripphotoData(member))
+    } catch (error){
+         res.status(400).json({error: error.message})
+    }
 }
 
 // delete a member
@@ -70,46 +76,35 @@ const deleteMember = async (req,res) => {
     if (!member){
         return res.status(400).json({error: "No such Member"})
     }
-    res.status(200).json(stripPhotoData(member))
+    res.status(200).json(stripphotoData(member))
 }
 
 
 // update a member
-const updateMember = async (req, res) => {
-  const { id } = req.params
-  if (!mongoose.Types.ObjectId.isValid(id)) {
-    return res.status(404).json({ error: "No such Member" })
-  }
-
-  // --- step 3 change starts ---
-  const ALLOWED_FIELDS = [
-    "forename_el","forename_en","surname_el","surname_en",
-    "role_el","role_en","cv_el","cv_en,priority"
-  ]
-
-  const update = {}
-  for (const key of ALLOWED_FIELDS) {
-    if (req.body[key] !== undefined) update[key] = req.body[key]
-  }
-  if (req.file) {
-    update.photo = { data: req.file.buffer, contentType: req.file.mimetype }
-  }
-
-  const member = await Member.findOneAndUpdate(
-    { _id: id }, update, { new: true, runValidators: true }
-  )
-  // --- step 3 change ends ---
-
-  if (!member) {
-    return res.status(400).json({ error: "No such Member" })
-  }
-  res.status(200).json(stripPhotoData(member))
+const updateMember = async (req,res) => {
+    const {id} = req.params
+     if (!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(404).json({error: "No such Member"})
+    }
+    const update = { ...req.body }
+    // only replace the image if a new one was uploaded
+    if (req.file){
+        update.photo = {
+            data: req.file.buffer,
+            contentType: req.file.mimetype
+        }
+    }
+    const member = await Member.findOneAndUpdate({_id: id}, update, { new: true })
+    if (!member){
+        return res.status(400).json({error: "No such Member"})
+    }
+    res.status(200).json(stripphotoData(member))
 }
 
 module.exports = {
     getMembers,
     getMember,
-    getMemberPhoto,
+    getMemberphoto,
     createMember,
     deleteMember,
     updateMember
