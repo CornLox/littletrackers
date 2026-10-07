@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../../assets/about_page_section.css";
 import Title from "../parts/Title";
@@ -29,22 +29,15 @@ function AboutPageSection() {
     fetchMembers();
   }, []);
 
-  // Alphabetical order by Greek surname, regardless of the UI language.
-  const sortedMembers = useMemo(() => {
-    if (!members) return null;
-    return [...members].sort((a, b) =>
-      (a.surname_el || "").localeCompare(b.surname_el || "", "el")
-    );
-  }, [members]);
-
+  // Order comes from the server (priority, then Greek surname/forename).
   return (
     <>
       <section id="about-page-section">
         <div className="container polaroid-container">
           <Title title={t("team.title")} hrId="about-page-section-hr" />
           <div className="row wrapper justify-content-around">
-            {sortedMembers &&
-              sortedMembers.map((member) => (
+            {members &&
+              members.map((member) => (
                 <div key={member._id} className="col-12 col-md-6 col-lg-4 item">
                   <div
                     className="polaroid btn-link text-reset text-decoration-none"
@@ -69,8 +62,8 @@ function AboutPageSection() {
 
       {/* Modals live OUTSIDE .item: a transform/filter ancestor would trap a
           position:fixed modal and stop it covering the page. */}
-      {sortedMembers &&
-        sortedMembers.map((member) => (
+      {members &&
+        members.map((member) => (
           <Modal
             key={member._id}
             modal_id={"team-" + member._id}
