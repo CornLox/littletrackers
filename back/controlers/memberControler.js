@@ -10,7 +10,10 @@ const stripPhotoData = (member) => {
 
 // get all members (excluding image bytes so the list stays light)
 const getMembers = async (req,res) => {
-    const members = await Member.find({}).select("-photo.data").sort({createdAt: -1})
+    const members = await Member.find({})
+        .select("-photo.data")
+        .collation({ locale: "el", strength: 1 })
+        .sort({ priority: 1, name: 1 })
     res.status(200).json(members)
 }
 
@@ -45,13 +48,13 @@ const getMemberPhoto = async (req,res) => {
 // create new member
 const createMember = async (req, res) => {
   const { forename_el,forename_en,surname_el,surname_en,
-  role_el,role_en,cv_el,cv_en } = req.body
+  role_el,role_en,cv_el,cv_en,priority } = req.body
   if (!req.file) {
     return res.status(400).json({ error: "member photo is required" })
   }
   const member = await Member.create({
     forename_el,forename_en,surname_el,surname_en,
-    role_el,role_en,cv_el,cv_en,
+    role_el,role_en,cv_el,cv_en,priority,
     photo: { data: req.file.buffer, contentType: req.file.mimetype }
   })
   res.status(200).json(stripPhotoData(member))
@@ -81,7 +84,7 @@ const updateMember = async (req, res) => {
   // --- step 3 change starts ---
   const ALLOWED_FIELDS = [
     "forename_el","forename_en","surname_el","surname_en",
-    "role_el","role_en","cv_el","cv_en"
+    "role_el","role_en","cv_el","cv_en,priority"
   ]
 
   const update = {}

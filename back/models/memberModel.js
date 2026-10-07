@@ -36,6 +36,10 @@ const memberSchema = new Schema({
         type: String,
         required: true
     },
+    priority: {
+    type: Number,
+    default: 0
+},
     
     photo:{
         data: { type: Buffer, required: true },
