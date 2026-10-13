@@ -306,6 +306,8 @@ function DoSection() {
 
               {/* -------- middle: the explanatory text -------- */}
               <div className="col-12 py-5 px-0 mx-0">
+                <h6 className="text-center">{t("do.quote")}</h6>
+                <h6 className="text-center mb-4">{t("do.quoteby")}</h6>
                 <p className="text-center" data-trailpoint="para">
                   {t("do.intro")}
                   <span id="music-span" className={spanClass("music")}>

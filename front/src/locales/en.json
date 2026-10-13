@@ -25,8 +25,8 @@
   },
   "about": {
     "title": "Who we are",
-    "p1": "We are a team of artists and educators formed in 2016 within the framework of the educational programmes of the Athens Epidaurus Festival. We design and deliver drama education programmes for children and adults, drawing inspiration from ancient drama and contemporary stage interpretations of myth. Our experience at Epidaurus forms the foundation of our work, while we continually seek new ways to bring ancient drama closer to contemporary audiences.",
-    "p2": "Our interest extends across a wide range of theatrical texts and genres: from ancient drama and theatrical mythologies to contemporary dramaturgy and new forms of stage storytelling. We trace the questions, conflicts, and human experiences conveyed by these works, exploring how they resonate with contemporary life. Through drama education, we create a space where children and adults can engage with theatre through experience, interpret it, and discover their own connections to its stories and worlds"
+    "p1": "We are a team of drama educators who, since 2016, have been designing and delivering the Mikroi Ichneytes educational programme as part of the Athens Epidaurus Festival. We facilitate drama education programmes for children aged 5–10, drawing inspiration from ancient drama and contemporary stage interpretations of myth. Our experience at Epidaurus forms the foundation of our work and serves as a starting point for exploring new ways of engaging with ancient drama, with the aim of nurturing the theatre audiences of tomorrow through our work with children.",
+    "p2": "Our interests span a wide range of theatrical texts and genres: from ancient drama and theatrical mythologies to contemporary dramaturgy and new forms of stage storytelling. We explore the questions, conflicts, and human experiences conveyed by these works, examining how they resonate with the world we live in today. With Educational Drama at the heart of our approach, and drawing on our experience in drama education, we create a space where children and adults can engage with theatre through direct experience, interpret it, and build their own bridges between myth and their everyday lives."
   },
   "team": {
     "title": "Our crew"
@@ -44,63 +44,69 @@
   },
   "do": {
     "title": "Discover what we do",
-    "intro": "We design a «journey» through which children are gradually initiated, through individual activities, into the magical universe of each play. ",
+    "quote": "“Here, nothing is imitation. Everything is about creating and playing.”",
+    "quoteby": "Tzvetan Todorov",
+    "intro": "We design a “journey”: the children follow the traces of a story we create and, through a series of activities, are gradually immersed in a multimodal world that unfolds and takes shape along the way. ",
     "theater": "theatre",
     "frag1": ", ",
     "music": "Music",
     "frag2": " and the ",
     "arts": "visual arts",
-    "frag3": " connect invisibly to one another and unravel the thread of the plot of the ",
+    "frag3": " blend seamlessly, unravelling the plot of ",
     "drama": "ancient drama",
-    "outro": " in a fun and interactive way. The children reflect on the questions the text raises and are called upon to make decisions about how the story unfolds."
+    "outro": " in a playful and interactive way. The children engage with the questions raised by the text and are invited to make decisions and take the initiative in shaping how the story unfolds."
   },
   "how": {
-    "title": "How we do it",
+    "title": "From Idea to Practice",
     "items": {
-      "collectiveSpace": {
-        "title": "Collective shaping of the space",
-        "text": "The visual-arts part is always the beginning of the programme, as it introduces the children to the story through the making of set objects that carry symbolic value, conveying meanings about the action to follow."
+      "thefirsttrace": {
+        "title": "The First Trace",
+        "text": "A story often begins with a trace: an object appears as if by magic, out of place in its surroundings, and everyone wonders how it got there and what it might mean. They follow the trail step by step, like trackers, and a mystery gradually unfolds: a place, a memory, a name pieced together syllable by syllable. This trace moves freely through time. It might be something entirely modern, even futuristic, or a fragment of another story that suddenly casts our own in a different light."
       },
-      "teacherInRole": {
-        "title": "Teacher in role",
-        "text": "The facilitator chooses the role suited to each moment, using a representative feature of that role (an object, a characteristic gesture, and so on). This technique sparks the students' interest, fosters their emotional engagement and creates the conditions for social interaction among the members of the group."
-      },
-      "collectiveRole": {
-        "title": "Collective role",
-        "text": "The children collectively play the role of a single character. Each child is free to speak whenever they feel they can add something to the role, without any need for agreement between their views. At a later stage of the technique, the children can jointly arrive at a collective portrayal of a role that they all agree on to some degree, which also strengthens cooperation."
-      },
-      "hotSeating": {
-        "title": "Hot seating",
-        "text": "A child, or a facilitator in role, is questioned by the rest of the group in order to bring to light the character's motives, actions, perceptions, values and so on. This technique is best used at a crucial moment of the drama and makes it easier to reach a decisive choice, as it helps the children study human behaviour in depth."
-      },
-      "mantleExpert": {
-        "title": "Mantle of the expert",
-        "text": "Without realising it, the children «know» what they don't believe they know. As experts, they are asked to investigate the data they are given, to solve riddles and to piece together clues, so that the world of the myth unfolds before them — along with the central question on which they are each time asked to take a position."
-      },
-      "conscienceAlley": {
-        "title": "Conscience alley",
-        "text": "The group splits in two and forms two facing rows, creating an alley. A facilitator or a child playing a particular role walks down the alley, while the other children voice the character's thoughts or offer advice about a decision they need to make. The character walking the alley, having heard the «voices of their conscience», then acts accordingly."
-      },
-      "puppet": {
-        "title": "Puppet",
-        "text": "The puppet is used as an independent dramatic character through which figures experiencing intense emotions, difficult situations, or moral dilemmas can be represented. Its small scale and materiality create a safer and more indirect relationship between the children and the character, allowing them to approach fear, loss, guilt, or emotional suffering without being confronted with a realistic representation."
-      },
-      "transformationOfMaterials": {
-        "title": "Transformation of materials",
-        "text": "Simple, everyday, or recyclable materials are transformed by the children into objects and elements of the dramatic world. A cardboard box can become a wall, a bottle a message at sea, a piece of wood a precious object, or a natural material an element of the myth. The process of making these objects is not simply an artistic activity but becomes part of the dramatic action and the development of the story itself. In this way, making becomes both a creative process and a means of engaging the children’s imagination."
-      },
-      "audiovisualCompositionOfSpace": {
-        "title": "Audiovisual Composition of Space",
-        "text": "This technique combines different media, such as light, shadow, projections, moving images, and sound, to create a distinctive dramatic environment. The individual elements do not function independently but are brought together to transform the space and create a world that could not be conveyed through stage objects alone. In this way, the space itself becomes part of the narrative, and the children do not simply observe an imaginary world but move through and explore it."
-      },
-      "shadowTheatre": {
-        "title": "Shadow theatre",
-        "text": "The technique of shadow theatre uses light and shadow to represent characters, events, and situations indirectly and symbolically. Through the screen, difficult or emotionally charged moments, such as death, loss, fear, or conflict, can be presented without being depicted realistically. At the same time, the abstraction of the image leaves room for children’s imagination and allows for the creation of poetic and symbolic imagery."
-      },
-      "mapping": {
-        "title": "Mapping",
-        "text": "Mapping transforms space into a field of exploration and discovery. Children use a map to find their way, identify specific locations, and connect the physical environment with the dramatic world of the programme. Searching for particular places, objects, or elements of the story thus becomes part of a shared mission. In this way, moving through space becomes an active process of observation, discovery, and meaning-making."
-      }
+      "thresholdsandtransitions": {
+    "title": "Thresholds and Transitions",
+    "text": "To enter the dramatic world of the programme, the children pass through symbolic thresholds and make step-by-step transitions that lead them ever deeper into the world of myth. An artistic object 'unlocks' the story for them. They step between the reeds blocking the entrance to a temple, purify their hands by following a ritual, pass through a circular gateway, knock on a door, and are greeted by a character from the drama."
+  },
+  "materialsreimagined": {
+    "title": "Materials Reimagined",
+    "text": "In Mikroi Ichneytes, a cardboard box becomes the walls of Troy, a plastic bottle conceals a message from Orestes asking for help, and a pebble becomes the pendant by which Electra recognises her brother. The children transform everyday, natural, or recyclable materials into elements of a world that takes shape with their participation. They often create large, collaborative constructions whose purpose is only revealed later: what they have made with their own hands becomes part of the action and of the world we explore together."
+  },
+  "thefacilitatorperformer": {
+    "title": "The Facilitator-Performer",
+    "text": "The Mikroi Ichneytes have no time for authority figures. We prefer to get confused, make mistakes, and ask the children for help. Their ideas can change the course of our shared adventure. As actors, we remain alert, truly listen to our fellow players, and respond in the moment. A child once called us 'actors-teachers': when we play alongside the children, she explained, we understand them better. This is how the facilitator-performer emerges: a fellow traveller and playmate at every step of the story."
+  },
+  "collectiveroles": {
+    "title": "Collective Roles",
+    "text": "In Mikroi Ichneytes, the children enter the story as a community with a mission. They become worshippers at a temple, inhabitants of a city, followers of a hero, or costume designers for a performance. They encounter dilemmas, share ideas, disagree, and decide how to act. Every child brings their own voice to our shared world. By stepping into the lives of others, we discover together new ways of seeing our own..."
+  },
+  "theroleofexpert": {
+    "title": "The Role of the Expert",
+    "text": "A more specialised form of collective role: the children informally take on a professional identity, such as archaeological site conservators or museum curators, and behave as though they already know what they are only just discovering. Without realising it, they 'know' far more than they think. As experts, they are called upon to investigate information, solve riddles, and piece together clues, until the entire world of myth unfolds before them, along with the issue on which they must take a stand."
+  },
+  "mapping": {
+    "title": "Mapping",
+    "text": "'At the roundabout, take the last exit towards Perdition Street... Continue until you reach the black lake with the ferryman. Pay him no attention. He takes far too long. Go straight past him!' Audio GPS guides, curious directions, maps, signs, and imaginary streets create a landscape of wandering and exploration that extends into the surrounding environment, connecting it with the dramatic world of the programme."
+  },
+  "multimodalenvironments": {
+    "title": "Multimodal Environments",
+    "text": "Light, shadow, projections, moving images, and sound come together to create a multimodal universe: animal shadows, star-filled skies, and shifting colours bring to life stories that cannot be conveyed through realistic stage representation. The boundaries between storytelling, imagery, and space become fluid, and the imaginary world itself becomes part of the action. The children move through and explore this world as though they inhabit it, if only for a little while."
+  },
+  "throughthepuppet": {
+    "title": "Through the Puppet",
+    "text": "The puppet becomes an independent dramatic character, giving voice to figures experiencing intense emotions, difficult situations, or moral dilemmas. Its small scale and physical presence create a safe bridge between the children and the character, allowing them to approach fear, loss, guilt, or suffering from a distance and in safety. Sometimes the puppeteer also appears in character alongside the puppet: two dramatic figures sharing the stage. Depending on the needs of the story, the relationship between the puppet, the puppeteer, and the children takes on a different form each time."
+  },
+  "shadowtheatre": {
+    "title": "Shadow Theatre",
+    "text": "Light and shadow transform the body: a facilitator becomes a shadow within a palace, a divine figure, or a Fate who determines a hero's destiny. Behind the screen, scale can shift freely, allowing difficult or emotionally charged moments, such as conflict or loss, to become the subject of poetic storytelling, like a fairy tale. The power of shadow lies in its simplicity and abstraction, leaving an empty space for the children's imagination to fill."
+  },
+  "contemporarycontexts": {
+    "title": "Contemporary Contexts",
+    "text": "An issue explored in a tragic text often finds its resonance in the present day. How can children grasp the meaning of supplication? Betrayal? Power? The Mikroi Ichneytes travel in time machines and often encounter contemporary forms of vulnerability along the way: a Roma child selling flowers, a skeleton who deals in weapons in a war zone, a woman who dares to defy social conventions and combs her hair in the light. In this way, an ancient dilemma takes on a contemporary human face."
+  },
+  "allegories": {
+    "title": "Allegories",
+    "text": "When a story ventures into dark and violent territory, the myth is often reconstructed through an entirely new system of imagery that preserves its intensity without realistically depicting violence. In the Oresteia, for example, a lion, a lioness, a wolf, and a nightingale took on the roles of the protagonists, drawn from the very metaphors Aeschylus uses to describe his characters: the net that traps the lion becomes the means by which Agamemnon is led to his death. The children follow the story, gradually connecting the animals with the characters and the relationships between them."
+  }
     }
   },
   "festival": {
@@ -142,6 +148,24 @@
   },
   "10": {
     "text": "For a child to stay in the space for three hours, be completely happy, never complain, and actually look forward to going back is amazing to me. The work being done here is truly exceptional!"
+  },
+  "11": {
+    "text": "Uh, I think that you are actors - teachers because actors - teachers are usually kinder than normal ones. [Nina, 8]"
+  },
+  "12": {
+    "text": "She wanted to listen to Maria Callas. She told us that when Callas sang, she was free."
+  },
+  "13": {
+    "text": "The spontaneous use of the verb 'we were' to describe the roles in the scenes dramatised by the Mikroi Ichneytes (e.g. 'We were soldiers'). There was a clear sense of togetherness and of the story coming to life."
+  },
+  "14": {
+    "text": "The opportunity to engage in creative activities as a group in a place so rich in artistic significance and marked by modern history. An immersive experience in nature, inspired by great works that explore human instincts and weaknesses! An encounter with life as portrayed through art!"
+  },
+  "15": {
+    "text": "The fact that a six-year-old child has the unique opportunity, at such a young age, to visit such an important UNESCO World Heritage site, not simply as a visitor but as an active participant in a programme connected to the site's use from antiquity to the present day, is an extraordinary benefit and a strong motivation for us to take part in activities of this kind."
+  },
+  "16": {
+    "text": "'Mum, today I lived a dream!! Can you please take me there again?'"
   }
 }
   },

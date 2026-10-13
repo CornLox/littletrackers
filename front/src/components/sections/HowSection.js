@@ -3,16 +3,18 @@ import { useTranslation } from "react-i18next";
 import "../../assets/how_section.css";
 import Title from "../parts/Title";
 import Modal from "../parts/Modal";
-import how_img1 from "../../images/teacher_in_role.jpg";
-import how_img2 from "../../images/collective_roll.jpg";
-import how_img3 from "../../images/hot_sitting.jpg";
-import how_img4 from "../../images/mantle_of_the_expert.jpg";
-import how_img5 from "../../images/conscience_alley.jpg";
-import how_img6 from "../../images/puppet.jpeg";
-import how_img7 from "../../images/transformation_of_materials.jpg";
-import how_img8 from "../../images/audiovisual_material.jpeg";
-import how_img9 from "../../images/shadow_theatre.jpeg";
-import how_img10 from "../../images/mapping.jpeg";
+import how_img1 from "../../images/the_first_trace.jpeg";
+import how_img2 from "../../images/thresholds_and_transitions.jpeg";
+import how_img3 from "../../images/materials_reimagined.jpg";
+import how_img4 from "../../images/the_facilitator_performer.jpeg";
+import how_img5 from "../../images/collective_roles.jpg";
+import how_img6 from "../../images/the_role_of_expert.jpg";
+import how_img7 from "../../images/mapping.jpeg";
+import how_img8 from "../../images/multimodal_environments.jpeg";
+import how_img9 from "../../images/through_the_puppet.jpeg";
+import how_img10 from "../../images/shadow_theatre.jpeg";
+import how_img11 from "../../images/contemporary_contexts.jpeg";
+import how_img12 from "../../images/allegories.jpeg";
 
 // while modal is active
 function makeBright(el) {
@@ -21,16 +23,20 @@ function makeBright(el) {
 
 // Each card: its image, and the translation-key stem under how.items.*
 const cards = [
-  { id: "how_img1", img: how_img1, key: "teacherInRole" },
-  { id: "how_img2", img: how_img2, key: "collectiveRole" },
-  { id: "how_img3", img: how_img3, key: "hotSeating" },
-  { id: "how_img4", img: how_img4, key: "mantleExpert" },
-  { id: "how_img5", img: how_img5, key: "conscienceAlley" },
-  { id: "how_img6", img: how_img6, key: "puppet" },
-  { id: "how_img7", img: how_img7, key: "transformationOfMaterials" },
-  { id: "how_img8", img: how_img8, key: "audiovisualCompositionOfSpace" },
-  { id: "how_img9", img: how_img9, key: "shadowTheatre" },
-  { id: "how_img10", img: how_img10, key: "mapping" },
+  
+  { id: "how_img1", img: how_img1, key: "thefirsttrace" },
+  { id: "how_img2", img: how_img2, key: "thresholdsandtransitions" },
+  { id: "how_img3", img: how_img3, key: "materialsreimagined" },
+  { id: "how_img4", img: how_img4, key: "thefacilitatorperformer" },
+  { id: "how_img5", img: how_img5, key: "collectiveroles" },
+  { id: "how_img6", img: how_img6, key: "theroleofexpert" },
+  { id: "how_img7", img: how_img7, key: "mapping" },
+  { id: "how_img8", img: how_img8, key: "multimodalenvironments" },
+  { id: "how_img9", img: how_img9, key: "throughthepuppet" },
+  { id: "how_img10", img: how_img10, key: "shadowtheatre" },
+  { id: "how_img11", img: how_img11, key: "contemporarycontexts" },
+  { id: "how_img12", img: how_img12, key: "allegories" }
+
 ];
 function HowSection() {
   const { t } = useTranslation();
